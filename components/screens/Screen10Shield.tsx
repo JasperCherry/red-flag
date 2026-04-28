@@ -1,18 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion } from "framer-motion";
 
-export default function Screen10Shield({ courseId }: { courseId: string }) {
+export default function Screen10Shield({}: { courseId: string }) {
   const router = useRouter();
-  const [isCelebrated, setIsCelebrated] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsCelebrated(true), 400);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col overflow-hidden">
@@ -28,16 +21,13 @@ export default function Screen10Shield({ courseId }: { courseId: string }) {
         >
           <h1 className="text-4xl font-bold text-[#1c2434]">Course Complete</h1>
           <p className="text-[#64748b] mt-3 text-lg">
-            You've successfully decoded the Anatomy of a Scam.
+            You&apos;ve successfully decoded the Anatomy of a Scam.
           </p>
         </motion.div>
 
-        {/* The Badge Section */}
         <div className="relative w-full flex items-center justify-center mb-16">
-          {/* Subtle Glow */}
           <div className="absolute w-64 h-64 bg-blue-400 rounded-full blur-[100px] opacity-20" />
 
-          {/* The Shield Badge */}
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -54,25 +44,17 @@ export default function Screen10Shield({ courseId }: { courseId: string }) {
           </motion.div>
         </div>
 
-        {/* Action Buttons */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="w-full max-w-sm space-y-4"
+          className="w-full max-w-sm"
         >
           <button
             onClick={() => router.push("/")}
             className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 text-lg"
           >
-            Claim Badge & Finish
-          </button>
-          
-          <button
-            onClick={() => router.push("/")}
-            className="w-full py-4 text-slate-400 font-medium hover:text-slate-600 transition-colors"
-          >
-            Return to Dashboard
+            Finish
           </button>
         </motion.div>
 

@@ -19,7 +19,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Hack Your Brain</h1>
           <p className="text-[#64748b] mt-2">
-            The scammer's greatest enemy isn't IT software. It's 10 seconds of your time.
+            The scammer&apos;s greatest enemy isn&apos;t IT software. It&apos;s 10 seconds of your time.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             <div className="space-y-2">
               <h2 className="text-2xl font-black tracking-tight italic uppercase">The 10-Second Circuit Breaker</h2>
               <p className="text-slate-400 leading-relaxed">
-                Scammers rely on <span className="text-white font-bold">momentum</span>. If they keep you moving, you can't think. 
+                Scammers rely on <span className="text-white font-bold">momentum</span>. If they keep you moving, you can&apos;t think.
               </p>
             </div>
 

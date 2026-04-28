@@ -9,28 +9,24 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const [timeLeft, setTimeLeft] = useState(10); // 10 second pressure
 
   const handleChoice = (choice: string) => {
-    // We navigate to the next screen regardless of choice
-    // But we pass the choice in the URL or state to explain later
     router.push(`/course/${courseId}/2?result=${choice}`);
   };
 
-  // Countdown logic to increase tension
   useEffect(() => {
-    if (timeLeft <= 0) handleChoice("timeout");
+    if (timeLeft <= 0) router.push(`/course/${courseId}/2?result=timeout`);
     const timer = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
     return () => clearInterval(timer);
-  }, [timeLeft]);
+  }, [timeLeft, router, courseId]);
 
 
   return (
     <div className="min-h-screen bg-[#0f172a] flex flex-col transition-colors duration-500">
-      {/* Hidden progress for the first screen to maintain the "Ambush" immersion */}
       <div className="opacity-20">
         <ScreenProgress current={1} />
       </div>
 
       <div className="flex-1 flex items-center justify-center p-6">
-        <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-red-500 animate-in fade-in zoom-in duration-300">
+        <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-red-500">
           
           {/* Header Area */}
           <div className="bg-red-500 p-4 flex items-center gap-3">
@@ -79,7 +75,6 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
         </div>
       </div>
 
-      {/* Subtle Hint - only visible to eagle eyes */}
       <div className="pb-10 text-center">
         <p className="text-slate-500 text-xs opacity-50">Notice something off? Decisions have consequences.</p>
       </div>

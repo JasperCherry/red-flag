@@ -15,11 +15,11 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
         {/* Header */}
         <div>
           <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">
-            Phase B: The "Bite-Sized Teach"
+            Phase B: The &ldquo;Bite-Sized Teach&rdquo;
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Anatomy of a Trap</h1>
           <p className="text-[#64748b] mt-2">
-            Even the most "perfect" scripts have flaws. Here is what you missed in the heat of the moment.
+            Even the most &ldquo;perfect&rdquo; scripts have flaws. Here is what you missed in the heat of the moment.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
             >
               <span className="text-yellow-400 font-bold block mb-1 text-xs uppercase tracking-wider">03. Contextual Noise</span> 
               <p className="text-sm text-slate-300 leading-snug">
-                Scary IP addresses and fake "Protocol IDs" provide a false sense of technical legitimacy.
+                Scary IP addresses and fake &ldquo;Protocol IDs&rdquo; provide a false sense of technical legitimacy.
               </p>
             </motion.div>
 

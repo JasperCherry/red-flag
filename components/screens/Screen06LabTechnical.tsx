@@ -27,7 +27,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Inspector</h1>
           <p className="text-[#64748b] mt-2">
-            Attackers hide behind "Display Names." Use the inspector tool to reveal the true sender before you take action.
+            Attackers hide behind &ldquo;Display Names.&rdquo; Use the inspector tool to reveal the true sender before you take action.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
             <h2 className="text-lg font-bold text-[#1c2434]">Urgent: Payroll Adjustment</h2>
             <p className="text-sm text-[#64748b] leading-relaxed">
               Hello, <br /><br />
-              We noticed a discrepancy in your bank details for this month's payroll. To ensure your salary is processed correctly, please verify your account info via the attached PDF.
+              We noticed a discrepancy in your bank details for this month&apos;s payroll. To ensure your salary is processed correctly, please verify your account info via the attached PDF.
             </p>
             <div className="flex items-center gap-3 p-3 border border-slate-100 rounded-xl bg-slate-50 w-fit">
               <div className="bg-red-100 text-red-600 p-2 rounded-lg">

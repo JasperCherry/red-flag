@@ -67,7 +67,7 @@ export default function Screen09PostGame({ courseId }: { courseId: string }) {
             <h2 className="font-bold text-sm">PDF Cheat Sheet</h2>
             <p className="text-slate-400 text-[11px]">Save these red flags to your device.</p>
           </div>
-          <button className="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold px-4 py-2.5 rounded-xl transition-all text-xs">Download</button>
+          <button disabled className="bg-white/10 text-white/40 border border-white/20 font-bold px-4 py-2.5 rounded-xl text-xs cursor-not-allowed">Download</button>
         </motion.div>
 
         <motion.button

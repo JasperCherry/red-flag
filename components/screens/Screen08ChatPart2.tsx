@@ -9,7 +9,6 @@ export default function Screen08ChatPart2({ courseId }: { courseId: string }) {
   const searchParams = useSearchParams();
   const choice = searchParams.get("choice");
 
-  // Logic to determine the outcome
   const outcomes = {
     "1": {
       title: "The Trap Closes",
@@ -95,7 +94,7 @@ export default function Screen08ChatPart2({ courseId }: { courseId: string }) {
             {outcome.lesson}
           </p>
           <p className="text-sm text-slate-600">
-            Real executives will never ask you to bypass security protocols. If it feels like a "performance," it's because it is.
+            Real executives will never ask you to bypass security protocols. If it feels like a &ldquo;performance,&rdquo; it&apos;s because it is.
           </p>
         </motion.div>
 

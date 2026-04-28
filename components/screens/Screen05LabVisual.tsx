@@ -12,17 +12,14 @@ export default function Screen05LabVisual({ courseId }: { courseId: string }) {
 
   const choices = {
     url: {
-      label: "Browser URL",
       correct: false,
       msg: "The URL looks correct (security.yourcorp.com). Attackers often keep the browser bar clean and hide the trap inside the page."
     },
     ip: {
-      label: "IP Address",
       correct: false,
       msg: "This is a standard local IP. It looks scary, but it's just 'technical noise' used to distract you from the real threat."
     },
     provider: {
-      label: "Verify Provider",
       correct: true,
       msg: "🎯 Bingo! 'security-protocol.net' is a registered domain owned by a hacker, not our company. You caught the trap."
     }

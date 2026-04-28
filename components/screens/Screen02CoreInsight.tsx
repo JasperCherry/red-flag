@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
-import { motion } from "framer-motion"; // Highly recommended: npm install framer-motion
+import { motion } from "framer-motion";
 
 export default function Screen02CoreInsight({ courseId }: { courseId: string }) {
   const router = useRouter();
@@ -32,7 +32,7 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
               : "You hesitated. But was it luck or logic?"}
           </h1>
           <p className="text-lg text-[#64748b]">
-            The alert you just saw wasn't a technical error. It was a <strong>Pretext</strong>—the first act of a digital performance.
+            The alert you just saw wasn&apos;t a technical error. It was a <strong>Pretext</strong>—the first act of a digital performance.
           </p>
         </motion.div>
 
@@ -49,9 +49,9 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold text-[#1c2434]">The "Helpful IT Guy" Role</h2>
+          <h2 className="text-xl font-bold text-[#1c2434]">The &ldquo;Helpful IT Guy&rdquo; Role</h2>
           <p className="text-[#64748b] leading-relaxed">
-            Scammers don't just send links; they cast themselves in a role. In the previous screen, the "actor" played the <strong>System Administrator</strong>. 
+            Scammers don&apos;t just send links; they cast themselves in a role. In the previous screen, the &ldquo;actor&rdquo; played the <strong>System Administrator</strong>.
           </p>
           <p className="text-[#64748b] leading-relaxed">
             They used a red border and a ticking clock to trigger your <strong>Urgency</strong>. When humans are rushed, we stop looking at the <em>sender</em> and start focusing on the <em>threat</em>.
@@ -68,11 +68,11 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
         >
           <div className="border-l-4 border-[#145bb3] pl-6 py-2">
             <p className="text-[#1c2434] font-medium italic text-lg">
-              "A scam is not a hack of your computer. It is a hack of your emotions."
+              &ldquo;A scam is not a hack of your computer. It is a hack of your emotions.&rdquo;
             </p>
           </div>
           <p className="text-[#64748b]">
-            By pretending to "help" you secure your account, the attacker makes you feel like you are on the same team. This is the <strong>Anatomy of a Scam</strong>: creating a fake reality where the safest thing to do is exactly what the attacker wants.
+            By pretending to &ldquo;help&rdquo; you secure your account, the attacker makes you feel like you are on the same team. This is the <strong>Anatomy of a Scam</strong>: creating a fake reality where the safest thing to do is exactly what the attacker wants.
           </p>
 
           <button

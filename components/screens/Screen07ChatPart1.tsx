@@ -13,23 +13,19 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
     {
       id: 1,
       text: "“I’m so sorry! Doing it right now. What’s the link?”",
-      type: "danger",
     },
     {
       id: 2,
       text: "“On it. Give me 5 minutes to get to my desk.”",
-      type: "neutral",
     },
     {
       id: 3,
       text: "“Hey Mark, just checking—I’m in a training right now. Is this actually urgent or can it wait?”",
-      type: "safe",
     },
   ];
 
   const handleSelection = (id: number) => {
     setSelectedChoice(id);
-    // We pass the choice ID to Screen 8 to determine the "consequence"
     setTimeout(() => {
       router.push(`/course/${courseId}/8?choice=${id}`);
     }, 600);
@@ -46,7 +42,7 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Authority Trap</h1>
           <p className="text-[#64748b] mt-2">
-            You receive a direct message from <span className="font-bold text-[#1c2434]">Mark (VP of Sales)</span> while you're in a middle of a busy afternoon.
+            You receive a direct message from <span className="font-bold text-[#1c2434]">Mark (VP of Sales)</span> while you&apos;re in the middle of a busy afternoon.
           </p>
         </div>
 
