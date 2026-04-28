@@ -23,6 +23,17 @@ import SPA09 from "@/components/synthetic-persona-attack/screens/SPA09";
 import SPA10 from "@/components/synthetic-persona-attack/screens/SPA10";
 import SPA11 from "@/components/synthetic-persona-attack/screens/SPA11";
 
+import SMR01 from "@/components/social-media-ooo-recon/screens/SMR01";
+import SMR02 from "@/components/social-media-ooo-recon/screens/SMR02";
+import SMR03 from "@/components/social-media-ooo-recon/screens/SMR03";
+import SMR04 from "@/components/social-media-ooo-recon/screens/SMR04";
+import SMR05 from "@/components/social-media-ooo-recon/screens/SMR05";
+import SMR06 from "@/components/social-media-ooo-recon/screens/SMR06";
+import SMR07 from "@/components/social-media-ooo-recon/screens/SMR07";
+import SMR08 from "@/components/social-media-ooo-recon/screens/SMR08";
+import SMR09 from "@/components/social-media-ooo-recon/screens/SMR09";
+import SMR10 from "@/components/social-media-ooo-recon/screens/SMR10";
+
 type ScreenMap = Record<string, React.ComponentType<{ courseId: string }>>;
 
 const COURSES: Record<string, ScreenMap> = {
@@ -50,6 +61,18 @@ const COURSES: Record<string, ScreenMap> = {
     "9": SPA09,
     "10": SPA10,
     "11": SPA11,
+  },
+  "social-media-ooo-recon": {
+    "1": SMR01,
+    "2": SMR02,
+    "3": SMR03,
+    "4": SMR04,
+    "5": SMR05,
+    "6": SMR06,
+    "7": SMR07,
+    "8": SMR08,
+    "9": SMR09,
+    "10": SMR10,
   },
 };
 

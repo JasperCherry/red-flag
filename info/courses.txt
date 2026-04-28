@@ -1,9 +1,12 @@
 
 
-The "Synthetic Persona" Attack: Hackers are now using AI to create entirely fake identities—complete with faces, 
-social media histories, and professional portfolios—to "get hired" at firms. We teach HR and managers how to spot 
-"Deepfake Candidates" during remote interviews and the signs of a fake LinkedIn "Recruiter." This course protects
-the company from "Insider Threats" that were never actually people to begin with.
+
+Social Media & OOO Recon: Your "Out of Office" auto-reply is a gift to a hacker. If you say, 
+"I'm in Tokyo until Friday, contact Sarah for emergencies," you’ve given an attacker the timing and 
+the target for an impersonation scam. This course shows how to share information without providing a 
+"roadmap" for a social engineering attack.
+
+
 
 
 

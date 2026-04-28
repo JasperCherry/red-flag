@@ -90,6 +90,47 @@ export default function SelectionPage() {
               </div>
             </div>
           </Link>
+          <Link href="/course/social-media-ooo-recon/1" className="group block">
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8 shadow-[0px_1px_3px_rgba(0,0,0,0.12)] hover:shadow-[0px_8px_13px_-3px_rgb(0_0_0_/_0.07)] hover:border-[#145bb3]/30 transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-6">
+                <div className="w-12 h-12 bg-[#145bb3]/10 rounded-xl flex items-center justify-center border border-[#145bb3]/20 shrink-0">
+                  <svg className="w-6 h-6 text-[#145bb3]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0016.803 15.803zM13.5 10.5h-6" />
+                  </svg>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-[#1c2434] mb-2 group-hover:text-[#145bb3] transition-colors">
+                Social Media &amp; OOO Recon
+              </h3>
+              <p className="text-sm text-[#64748b] leading-relaxed mb-6">
+                Your &ldquo;Out of Office&rdquo; auto-reply is a gift to a hacker. Learn how attackers harvest social media and absence signals to time impersonation scams — and how to share information without handing them a roadmap.
+              </p>
+
+              <div className="flex items-center gap-4 text-xs text-[#8a99af] mb-6">
+                <span className="flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  10 screens
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
+                  </svg>
+                  OSINT &amp; Social Engineering
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2 text-[#145bb3] font-semibold text-sm group-hover:text-[#1c78e9] transition-colors">
+                Start Course
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </Link>
         </div>
       </main>
     </div>
