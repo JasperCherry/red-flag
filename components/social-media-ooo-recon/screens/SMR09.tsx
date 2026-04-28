@@ -4,33 +4,96 @@ import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion } from "framer-motion";
 
-export default function SMR09({}: { courseId: string }) {
+export default function SMR09Analysis({ courseId }: { courseId: string }) {
   const router = useRouter();
+
+  const takeaways = [
+    {
+      title: "Context is Currency",
+      desc: "Attackers don't need your password to start. They just need your location, your schedule, and one colleague's name.",
+      icon: "💎"
+    },
+    {
+      title: "The Vague-Reply Rule",
+      desc: "Set your 'Out of Office' to be specific for internal staff and vague for everyone else. Never name your hotel or your coverage.",
+      icon: "🛡️"
+    },
+    {
+      title: "Verify Out-of-Band",
+      desc: "If a request feels urgent or unusual, switch to a trusted channel. Call their office extension. Never trust a personal device claim.",
+      icon: "📞"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col">
       <ScreenProgress current={9} />
 
-      <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col justify-between">
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-6">
-          <div>
-            <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">Screen 9</p>
-            <h1 className="text-3xl font-bold text-[#1c2434]">SMR09 — Boilerplate</h1>
-            <p className="text-[#64748b] mt-3 leading-relaxed">Content coming soon.</p>
-          </div>
+      <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-12 pb-24 flex flex-col">
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }} 
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-10"
+        >
+          <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase D: Recap</p>
+          <h1 className="text-3xl font-bold text-[#1c2434]">Course Summary</h1>
+          <p className="text-[#64748b] mt-4">
+            Alex Morgan's "Austin Trip" could have been a disaster. Here is how we prevent the roadmap from being built:
+          </p>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+        {/* Takeaways: What we learned */}
+        <div className="space-y-4 mb-10">
+          {takeaways.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: idx * 0.1 }}
+              className="bg-white border border-slate-200 p-6 rounded-[2rem] flex items-center gap-6 shadow-sm"
+            >
+              <div className="text-3xl">{item.icon}</div>
+              <div>
+                <h4 className="font-bold text-[#1c2434] text-sm">{item.title}</h4>
+                <p className="text-xs text-[#64748b] leading-relaxed mt-1">{item.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* PDF Download Action */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="bg-blue-50 border border-blue-100 p-6 rounded-[2rem] flex items-center justify-between mb-10"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-xl shadow-sm">📄</div>
+            <div>
+              <p className="text-xs font-bold text-blue-900">The OOO Cheat Sheet</p>
+              <p className="text-[10px] text-blue-700">Safe templates for your next trip.</p>
+            </div>
+          </div>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold py-2 px-4 rounded-lg transition-all active:scale-95">
+            Download PDF
+          </button>
+        </motion.div>
+
+        {/* Final Navigation */}
+        <motion.div className="mt-auto">
           <button
-            onClick={() => router.push(`/course/social-media-ooo-recon/10`)}
-            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3"
+            onClick={() => router.push(`/course/${courseId}/10`)}
+            className="w-full bg-[#1c2434] hover:bg-black text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3"
           >
-            Next
+            Finish Course
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </motion.div>
+
       </div>
     </div>
   );

@@ -2,35 +2,95 @@
 
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
-export default function SMR07({}: { courseId: string }) {
+export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
   const router = useRouter();
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
+
+  const handleChoice = (index: number) => {
+    setSelectedOption(index);
+    // Move to Screen 8 with the choice as a query parameter
+    setTimeout(() => {
+      router.push(`/course/${courseId}/8?choice=${index}`);
+    }, 600);
+  };
+
+  const options = [
+    { id: 0, text: "Wait, which project? And why aren't you using your work phone?" },
+    { id: 1, text: "I'm in a session right now. Can this wait until I'm back in the hotel?" },
+    { id: 2, text: "Hey Sarah, I'm actually tied up. I'll call you on your office extension in 10 mins." }
+  ];
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] flex flex-col">
+    <div className="min-h-screen bg-[#f1f5f9] flex flex-col">
       <ScreenProgress current={7} />
 
-      <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col justify-between">
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-6">
-          <div>
-            <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">Screen 7</p>
-            <h1 className="text-3xl font-bold text-[#1c2434]">SMR07 — Boilerplate</h1>
-            <p className="text-[#64748b] mt-3 leading-relaxed">Content coming soon.</p>
-          </div>
-        </motion.div>
+      <div className="flex-1 max-w-md mx-auto w-full px-6 pt-10 pb-24 flex flex-col">
+        
+        <div className="mb-6">
+          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">Phase C: Branching Chat</p>
+          <h1 className="text-xl font-bold text-[#1c2434]">The "Sarah" Escalation</h1>
+        </div>
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-          <button
-            onClick={() => router.push(`/course/social-media-ooo-recon/8`)}
-            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3"
-          >
-            Next
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </motion.div>
+        {/* Mobile Interface Simulation */}
+        <div className="bg-[#e5ddd5] rounded-[3rem] border-[8px] border-[#1c2434] shadow-2xl overflow-hidden flex flex-col aspect-[9/16] relative">
+          
+          {/* Chat Header */}
+          <div className="bg-[#075e54] p-4 pt-10 flex items-center gap-3 text-white">
+            <div className="w-10 h-10 rounded-full bg-slate-400 flex-shrink-0 border border-white/20" />
+            <div>
+              <p className="text-sm font-bold">Sarah Jenkins</p>
+              <p className="text-[10px] opacity-80">online</p>
+            </div>
+          </div>
+
+          {/* Chat Bubble Area */}
+          <div className="flex-1 p-4 space-y-4 overflow-y-auto">
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0, x: -20 }}
+              animate={{ scale: 1, opacity: 1, x: 0 }}
+              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
+            >
+              "Alex! Sorry to bug you in Austin, but I'm having a total meltdown with the Global Summit file. My laptop just died and I need the <span className="font-bold underline">Admin Passcode</span> for the shared drive ASAP."
+            </motion.div>
+
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0, x: -20 }}
+              animate={{ scale: 1, opacity: 1, x: 0 }}
+              transition={{ delay: 0.5 }}
+              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
+            >
+              "I'm using my personal phone because the office network is acting up too. Please help!! 🙏"
+            </motion.div>
+          </div>
+
+          {/* User Input Options */}
+          <div className="p-4 bg-white/90 backdrop-blur-md border-t border-slate-200 space-y-2">
+            <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 text-center">Select your response:</p>
+            
+            {options.map((opt) => (
+              <button
+                key={opt.id}
+                onClick={() => handleChoice(opt.id)}
+                disabled={selectedOption !== null}
+                className={`w-full text-left p-3 rounded-xl text-xs font-medium transition-all border
+                  ${selectedOption === opt.id 
+                    ? 'bg-blue-600 text-white border-blue-600 scale-[0.98]' 
+                    : 'bg-white text-slate-700 border-slate-200 hover:border-blue-400 active:bg-slate-50'}
+                `}
+              >
+                {opt.text}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <p className="mt-6 text-center text-[10px] text-slate-400 italic leading-relaxed">
+          The attacker is counting on your "Helper Instinct" and the stress of being at a summit.
+        </p>
+
       </div>
     </div>
   );
