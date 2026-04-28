@@ -1,0 +1,75 @@
+
+
+The "Synthetic Persona" Attack: Hackers are now using AI to create entirely fake identities—complete with faces, 
+social media histories, and professional portfolios—to "get hired" at firms. We teach HR and managers how to spot 
+"Deepfake Candidates" during remote interviews and the signs of a fake LinkedIn "Recruiter." This course protects
+the company from "Insider Threats" that were never actually people to begin with.
+
+
+
+=========================================
+
+------// Phase 1: The Psychology of the Con (Behavioral Fundamentals)
+
+The Anatomy of a Scam: This course breaks down the "Theatrical Script" used by every attacker: the Pretext (the story), the Hook (the lure), and the Trap (the action). Employees will learn to view every unsolicited interaction not as a task to complete, but as a performance to evaluate. By understanding that scammers play specific roles—like the "Helpful IT Guy" or the "Disappointed Boss"—employees can distance themselves emotionally and spot the script before they click.
+
+The "Amygdala Hijack" (Emotional Hijacking): We dive into the biology of how stress shuts down the logical part of the human brain. When a scammer creates a sense of panic or extreme curiosity, your "Prefrontal Cortex" (the part that spots errors) goes offline. This module teaches the "10-Second Breath" technique—a literal biological kill-switch that restarts logical thinking and allows an employee to see the red flags they almost missed.
+
+The Four Triggers of Influence: Humans are hard-wired to respond to four specific social cues: Authority, Urgency, Scarcity, and Fear. We show real-world examples of how attackers weaponize these triggers to bypass corporate security protocols. By the end of this course, employees will recognize that any message using phrases like "Confidential," "Immediate Action Required," or "Your account will be deleted" is a psychological red flag.
+
+The "Helpfulness" Trap (Social Engineering): In a corporate environment, we are trained to be "team players" and "helpful colleagues," which is exactly what hackers exploit. This course teaches how to identify "Reciprocity" scams—where a hacker does a small "favor" for you to make you feel obligated to help them later. It provides a toolkit of "Polite Pivots," allowing staff to say "No" or "I need to verify this" without feeling like they are being difficult or rude.
+
+The Verification Mindset: This is the move from "Seeing is Believing" to "Verify, then Trust." We introduce the "Out-of-Band" Rule: if a request arrives on one channel (like Email), you must verify it on a completely different, trusted channel (like a known phone number). This course shifts the burden of proof from the employee to the requester, making "blind trust" a thing of the past.
+
+
+
+
+
+------// Phase 2: The "AI-Shield" Series (High Demand/Premium)
+
+Deepfake Awareness: This module moves beyond the "uncanny valley" and teaches employees how to handle AI-manipulated video in live meetings. We cover the "Profile View" test—asking a suspicious caller to turn their head 90 degrees—which remains the most effective way to break an AI's facial rendering in 2026. Students will also learn to spot "occlusion errors" where a hand passing in front of a face causes the AI image to glitch or disappear.
+
+The Rise of Vishing (Voice Cloning): With only 3 seconds of audio, an attacker can now clone anyone’s voice with perfect emotional accuracy. This course teaches the "Double-Check" protocol for high-stakes voice calls, such as those requesting password resets or bank transfers. We emphasize the implementation of a "Team Safe Word"—a secret phrase known only to the team that AI cannot guess or replicate during a crisis.
+
+Generative AI at Work: As LLMs become standard tools, employees must understand that "The Internet Never Forgets." This course explains the risks of "Shadow AI"—pasting sensitive company code or legal documents into public AI tools that save that data for future training. We also cover "Prompt Injection", where a malicious document can "talk" to your AI and trick it into leaking your private information.
+
+Hyper-Realistic Phishing: The days of looking for "bad grammar" and "misspelled words" are over; AI now writes perfect, professional prose. This course focuses on Contextual Authenticity—how attackers use your public LinkedIn history to write an email that perfectly mimics your boss's tone and current projects. Employees will learn that a "perfectly written" email is actually more suspicious than a messy one.
+
+The "Synthetic Persona" Attack: Hackers are now using AI to create entirely fake identities—complete with faces, social media histories, and professional portfolios—to "get hired" at firms. We teach HR and managers how to spot "Deepfake Candidates" during remote interviews and the signs of a fake LinkedIn "Recruiter." This course protects the company from "Insider Threats" that were never actually people to begin with.
+
+
+
+
+
+------// Phase 3: The "Identity & Access" Series (Modern Infrastructure)
+
+Goodbye Passwords, Hello Passkeys: Passwords are the weakest link in 2026; Passkeys are the future. This course explains how biometrics and hardware keys (like YubiKeys) create a cryptographic link between a user and a site that cannot be phished. We show employees how to transition their most sensitive accounts to Passwordless login, making them 99% more secure instantly.
+
+MFA Fatigue & Push Attacks: Hackers have moved from "stealing codes" to "annoying users into clicking Approve." This module explains MFA Bombing—where a hacker triggers dozens of login notifications on your phone until you click "Yes" just to make it stop. The rule is simple: if you didn't just try to log in yourself, every notification is a hostile attack.
+
+"Quishing" (QR Code Phishing): QR codes are the perfect way to hide a malicious URL from an email filter. We show how "Quishing" works by luring employees to scan a code on their personal phone, which is often less protected than their work PC. This course teaches the "Scan with Caution" rule and how to inspect a QR link before it opens.
+
+Social Media & OOO Recon: Your "Out of Office" auto-reply is a gift to a hacker. If you say, "I'm in Tokyo until Friday, contact Sarah for emergencies," you’ve given an attacker the timing and the target for an impersonation scam. This course shows how to share information without providing a "roadmap" for a social engineering attack.
+
+
+
+
+------// Phase 4: The "Operational Survival" Series (Company Habits)
+
+The Finance Defender (BEC): This is the highest-value course in the suite, specifically for those with spending authority. We focus on Business Email Compromise (BEC) and the "Law of the Redial." The core lesson: any change in bank details, no matter how "official" the invoice looks, must be verified by a direct phone call to a known, pre-saved contact.
+
+Remote Work & The Nomad Office: Working from a cafe or an airport introduces physical risks that the office doesn't have. We cover "Juice Jacking" (malicious USB charging ports) and why using a VPN is mandatory on public Wi-Fi. This course ensures that your "office" is secure, whether it’s in a living room or a hotel lobby.
+
+Cloud Sharing & "Ghost" Access: Over-sharing is a silent killer in 2026. We teach employees how to audit their own Google Drive or OneDrive permissions to find folders that are accidentally "Open to anyone with the link." This course helps clean up the "Digital Dust" that allows hackers to find sensitive data left behind from old projects.
+
+Ransomware: The First 60 Seconds: Most employees panic when they see a "Your files are encrypted" message, making the problem worse. This course provides a 3-step emergency protocol: Disconnect (unplug), Document (take a photo), and Disclose (call IT immediately). Fast action in the first minute can save millions in recovery costs.
+
+The "Helpdesk" Imposter: A classic scam updated for the AI age. We role-play a call from a "Service Provider" claiming your computer has a virus. Employees will learn that a real IT helpdesk will never ask for a password or demand that you install "Remote Access" software like AnyDesk or TeamViewer during a cold call.
+
+Reporting as a Superpower: Security isn't just about not clicking; it’s about speaking up when you do. We explain that the "Golden Hour" after a mistake is the only time IT can truly stop a breach. This course builds a culture where reporting a "bad click" is rewarded as a courageous act that protects the entire company.
+
+
+
+
+
+

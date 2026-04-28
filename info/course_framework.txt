@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+-------// Phase A: The "Blind Entry"
+Total: 1 Screen
+
+Screen 1: The Ambush. A full-screen interactive "event."
+
+Interaction: User must make a split-second choice (e.g., "Accept/Deny" or "Click link/Ignore").
+
+Exit: Regardless of choice, the screen transitions to Phase B with a "Did you make the right call?" teaser.
+
+
+
+
+
+
+-------// Phase B: The "Bite-Sized Teach"
+Total: 3 Screens
+
+Screen 2: The Core Insight. Focuses on the "Why." Explain the psychology or the tech behind the attack.
+
+Screen 3: The Red Flags. Visual screen. Highlighting exactly what to look for (3 bullet points max).
+
+Screen 4: The Pro-Tip. A "Hack your own behavior" screen (e.g., The 10-second rule or a specific physical test).
+
+Note: Use Scrolly-telling here to keep it feeling like one continuous flow rather than three "clicks."
+
+
+
+
+
+-------// Phase C: The "Active Simulation"
+Total: 4 Screens
+
+Screen 5: The Lab (Visual). A "Spot the Fake" exercise.
+
+Action: User must click the "glitch" in an image or video.
+
+Screen 6: The Lab (Technical). A "Verification" exercise.
+
+Action: Inspecting a URL, a sender’s address, or a file extension.
+
+Screen 7: The Branching Chat (Part 1). The setup.
+
+Action: A colleague/boss/stranger messages you. You pick a response.
+
+Screen 8: The Branching Chat (Part 2). The resolution.
+
+Action: The consequence plays out based on your choice. If you failed, you get a "Try again" loop or a "Learning Moment" popup.
+
+
+
+
+-------// Phase D: The "Recap & Reward"
+Total: 2 Screens
+
+Screen 9: The Post-Game Analysis. * Content: "What we learned." 3 punchy bullet points.
+
+Action: A "Download PDF Cheat Sheet" button for their desktop.
+
+Screen 10: The Shield. * Content: Celebration screen.
+
+Action: Animate the "Shield Badge" appearing. Shows the user's updated "Security Level" and a "Start Next Course" button.
+
+
+
+
+
+
+
+-------// Why 10 Screens?
+
+Production Consistency: You can build 10 standard React components and just swap the data (text/video/images) for all 20 courses.
+
+User Expectations: Employees learn the "pattern." They know by Screen 5, they need to be ready to work, and by Screen 10, they are done.
+
+Data Analytics: It’s easy for HR to see: "Most employees drop off at Screen 7 (The Chat)." This tells you exactly where the course is too hard or confusing.
+
+
+
+
+
+

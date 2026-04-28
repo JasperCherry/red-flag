@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Satoshi font */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Variable.woff2") format("woff2"),
+       url("/fonts/Satoshi-Variable.woff") format("woff");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-sans: "Satoshi", "Inter", system-ui, sans-serif;
+
+  /* Brand colors */
+  --color-primary:    #145bb3;
+  --color-primary-lt: #1c78e9;
+  --color-primary-dk: #114e9a;
+
+  /* Surface */
+  --color-bg:      #f1f5f9;
+  --color-surface: #ffffff;
+  --color-card:    #ffffff;
+
+  /* Text */
+  --color-text:       #1c2434;
+  --color-body:       #64748b;
+  --color-muted:      #8a99af;
+  --color-subtle:     #aeb7c0;
+
+  /* Borders */
+  --color-stroke:     #e2e8f0;
+  --color-stroke-dk:  #d1d9e2;
+
+  /* Status */
+  --color-success:    #219653;
+  --color-danger:     #d34053;
+  --color-warning:    #ffa70b;
+
+  /* Shadows */
+  --shadow-card:    0px 1px 3px rgba(0,0,0,0.12);
+  --shadow-default: 0px 8px 13px -3px rgb(0 0 0 / 0.07);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { box-sizing: border-box; }
+html { height: 100%; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  background: #f1f5f9;
+  color: #1c2434;
+  font-family: "Satoshi", "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.4s ease-out both; }
+.animate-fade-in    { animation: fadeIn 0.3s ease-out both; }
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
