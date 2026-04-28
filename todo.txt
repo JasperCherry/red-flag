@@ -14,5 +14,12 @@ courses restricted with auth
 
 ---// create third course
 
+keep working and improving courses 
+
+add timer on ambush on course 2
+
+improve the code on 3rd course 
+
+
 
 
