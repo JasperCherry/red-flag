@@ -33,9 +33,9 @@ function ResolutionContent({ courseId }: { courseId: string }) {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Threat Neutralized</h2>
             <div className="bg-white border border-slate-200 p-6 rounded-[2rem] shadow-sm text-left mb-8">
               <p className="text-slate-600 text-sm leading-relaxed">
-                By directing "Sarah" to official channels, you followed the **Zero Trust** model. 
+                By directing &ldquo;Sarah&rdquo; to official channels, you followed the **Zero Trust** model.
                 <br /><br />
-                Security logs later revealed "Sarah Jenkins" never actually joined the company—it was a synthetic persona designed to harvest bank details from helpful employees.
+                Security logs later revealed &ldquo;Sarah Jenkins&rdquo; never actually joined the company—it was a synthetic persona designed to harvest bank details from helpful employees.
               </p>
             </div>
           </motion.div>
@@ -57,7 +57,7 @@ function ResolutionContent({ courseId }: { courseId: string }) {
                 You just sent sensitive data over an unencrypted chat to an unverified identity.
               </p>
               <p className="text-red-700/70 text-xs mt-3 leading-relaxed">
-                "Sarah" used your "helpful" manual update to divert direct deposits to an offshore account. This is how 70% of synthetic identity theft succeeds—through kindness, not code.
+                &ldquo;Sarah&rdquo; used your &ldquo;helpful&rdquo; manual update to divert direct deposits to an offshore account. This is how 70% of synthetic identity theft succeeds—through kindness, not code.
               </p>
             </div>
             <button 

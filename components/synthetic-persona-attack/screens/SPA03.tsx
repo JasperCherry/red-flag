@@ -41,7 +41,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Spotting the Artifacts</h1>
           <p className="text-[#64748b] mt-2">
-            AI is a master of the face, but a failure at the details. Watch for these three "glitches."
+            AI is a master of the face, but a failure at the details. Watch for these three &ldquo;glitches.&rdquo;
           </p>
         </motion.div>
 

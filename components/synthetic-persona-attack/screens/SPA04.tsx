@@ -22,7 +22,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
               Phase B: The Shield
             </p>
-            <h1 className="text-3xl font-bold text-[#1c2434]">The "Profile" Test</h1>
+            <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Profile&rdquo; Test</h1>
           </motion.div>
 
           {/* Scrolly-telling Content */}
@@ -35,7 +35,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             >
               <h3 className="font-bold text-[#1c2434] mb-2">Force a 90° Turn</h3>
               <p className="text-sm text-[#64748b] leading-relaxed">
-                Most consumer-grade AI models are trained on frontal photos. When a person turns their head completely to the side, the AI struggles to map the nose and ears, causing the "mask" to flicker or disappear.
+                Most consumer-grade AI models are trained on frontal photos. When a person turns their head completely to the side, the AI struggles to map the nose and ears, causing the &ldquo;mask&rdquo; to flicker or disappear.
               </p>
             </motion.div>
 
@@ -49,7 +49,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               <div className="relative z-10">
                 <p className="text-blue-400 font-mono text-[10px] uppercase tracking-widest mb-4">Tactical Command</p>
                 <p className="text-xl font-medium leading-snug">
-                  "Hey, Sarah—could you just tilt your head to the left for a second? I want to check the lighting on your side."
+                  &ldquo;Hey, Sarah—could you just tilt your head to the left for a second? I want to check the lighting on your side.&rdquo;
                 </p>
               </div>
               {/* Decorative Pulse */}
@@ -63,7 +63,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               viewport={{ once: true }}
               className="text-center text-xs text-slate-400 font-medium px-4"
             >
-              If they refuse or the video "glitches" out, terminate the call immediately.
+              If they refuse or the video &ldquo;glitches&rdquo; out, terminate the call immediately.
             </motion.p>
           </div>
         </div>

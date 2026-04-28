@@ -52,7 +52,7 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
           <div className="flex-1 p-6 space-y-4 bg-slate-50/30 font-sans">
             <div className="flex flex-col gap-1 max-w-[85%]">
               <div className="bg-white border border-slate-200 p-4 rounded-2xl rounded-tl-none text-slate-700 text-sm shadow-sm leading-relaxed">
-                Hey! So sorry to bother you. I'm having a total nightmare with the HR portal and it won't let me save my <span className="font-semibold text-slate-900">Direct Deposit</span> info.
+                Hey! So sorry to bother you. I&apos;m having a total nightmare with the HR portal and it won&apos;t let me save my <span className="font-semibold text-slate-900">Direct Deposit</span> info.
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
                 onClick={() => handleChoice('unsafe')}
                 className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-sm text-left transition-all"
               >
-                <p className="font-bold text-slate-800">"Sure, send it over and I'll handle it."</p>
+                <p className="font-bold text-slate-800">&ldquo;Sure, send it over and I&apos;ll handle it.&rdquo;</p>
                 <p className="text-[11px] text-slate-500 mt-1">Help the new hire meet the payroll deadline immediately.</p>
               </button>
 
@@ -94,7 +94,7 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
                 onClick={() => handleChoice('secure')}
                 className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-sm text-left transition-all"
               >
-                <p className="font-bold text-slate-800">"I can't take that info over chat. Contact HR."</p>
+                <p className="font-bold text-slate-800">&ldquo;I can&apos;t take that info over chat. Contact HR.&rdquo;</p>
                 <p className="text-[11px] text-slate-500 mt-1">Require the use of official encrypted company portals.</p>
               </button>
             </motion.div>

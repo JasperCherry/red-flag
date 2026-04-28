@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const router = useRouter();
@@ -67,7 +66,7 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
             
             <div className="bg-black/30 rounded-2xl p-5 mb-8 text-left border border-white/5">
               <p className="text-slate-300 text-sm leading-relaxed italic">
-                "Hi, I'm Sarah. I'm here for the Final Round interview for the Project Lead role. Ready when you are!"
+                &ldquo;Hi, I&apos;m Sarah. I&apos;m here for the Final Round interview for the Project Lead role. Ready when you are!&rdquo;
               </p>
             </div>
 

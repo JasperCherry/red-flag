@@ -21,9 +21,9 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
             Phase B: The Logic
           </p>
-          <h1 className="text-3xl font-bold text-[#1c2434]">The "Ghost" in the Machine</h1>
+          <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Ghost&rdquo; in the Machine</h1>
           <p className="text-[#64748b] mt-3 text-lg leading-relaxed">
-            "Sarah" is a **Synthetic Persona**. She was built using a blend of stolen data and Generative AI to bypass the standard "Stranger Danger" instincts of HR managers.
+            &ldquo;Sarah&rdquo; is a **Synthetic Persona**. She was built using a blend of stolen data and Generative AI to bypass the standard &ldquo;Stranger Danger&rdquo; instincts of HR managers.
           </p>
         </motion.div>
 
@@ -40,11 +40,11 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
             </h3>
             <div className="space-y-4">
               <p className="text-slate-600 leading-relaxed">
-                Humans are biologically hardwired to trust **symmetry** and **eye contact**. Deepfake models are specifically trained to replicate these "trust triggers," making us ignore technical red flags.
+                Humans are biologically hardwired to trust **symmetry** and **eye contact**. Deepfake models are specifically trained to replicate these &ldquo;trust triggers,&rdquo; making us ignore technical red flags.
               </p>
               <div className="bg-blue-50 rounded-2xl p-5 border border-blue-100">
                 <p className="text-sm text-blue-800 font-medium">
-                  The Goal: To get "hired," gain VPN access, and move laterally through the company network as an authorized employee.
+                  The Goal: To get &ldquo;hired,&rdquo; gain VPN access, and move laterally through the company network as an authorized employee.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
           >
             <p className="text-red-500 font-bold text-3xl mb-1">$$$</p>
             <p className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">Potential Loss</p>
-            <p className="text-[10px] text-slate-500 mt-2 leading-tight">One "insider" can export terabytes of proprietary data.</p>
+            <p className="text-[10px] text-slate-500 mt-2 leading-tight">One &ldquo;insider&rdquo; can export terabytes of proprietary data.</p>
           </motion.div>
         </div>
 

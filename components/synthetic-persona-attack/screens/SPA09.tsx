@@ -78,7 +78,7 @@ export default function Screen09Recap({ courseId }: { courseId: string }) {
         >
           <p className="text-blue-400 font-mono text-[10px] uppercase tracking-widest mb-2">Final Thought</p>
           <p className="text-lg font-medium leading-relaxed">
-            "Identity is the new perimeter. If you can't verify the human, you can't trust the access."
+            &ldquo;Identity is the new perimeter. If you can&apos;t verify the human, you can&apos;t trust the access.&rdquo;
           </p>
           {/* Subtle decoration */}
           <div className="absolute top-0 right-0 p-4 opacity-10">

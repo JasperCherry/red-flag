@@ -3,20 +3,17 @@
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Screen06LabTechnical({ courseId }: { courseId: string }) {
   const router = useRouter();
   const [selected, setSelected] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [dynamicDate, setDynamicDate] = useState("");
-
-  // Set the "Joined" date to 2 months ago relative to the current user's date
-  useEffect(() => {
+  const [dynamicDate] = useState(() => {
     const d = new Date();
     d.setMonth(d.getMonth() - 2);
-    setDynamicDate(d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }));
-  }, []);
+    return d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  });
 
   const options = [
     { 
@@ -59,7 +56,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
           <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase C: Verification</p>
           <h2 className="text-2xl font-bold text-[#1c2434]">The Digital Paperwork</h2>
           <p className="text-slate-600 text-sm mt-2">
-            Synthetic personas have "shallow" digital histories. Inspect Sarah's profile details. Which one is the **dead giveaway?**
+            Synthetic personas have &ldquo;shallow&rdquo; digital histories. Inspect Sarah&apos;s profile details. Which one is the **dead giveaway?**
           </p>
         </div>
 

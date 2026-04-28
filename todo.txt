@@ -12,7 +12,7 @@ courses restricted with auth
 
 
 
----// create second course
+---// create third course
 
 
 
