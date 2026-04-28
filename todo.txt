@@ -1,31 +1,18 @@
 
 
 // general design
-desktop only
-
-
-
-
-// figure out models for the data 
-user
-course 
-content 
-etc.
+desktop / mobile
+user, user_groups in db 
+courses restricted with auth 
 
 
 
 
 
----// create first demo course
-take styles from forteye front end 
-
-
-screen 1 - select the course 
-screen 2+ - course itself 
 
 
 
-// redo the whole thing in new repo 
+---// create second course
 
 
 

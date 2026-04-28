@@ -2,25 +2,121 @@
 
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import Image from "next/image";
 
-export default function Screen01({ courseId }: { courseId: string }) {
+export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const router = useRouter();
+  const [choice, setChoice] = useState<null | 'accept' | 'deny'>(null);
+
+  const handleChoice = (type: 'accept' | 'deny') => {
+    setChoice(type);
+    setTimeout(() => {
+      router.push(`/course/${courseId}/2`);
+    }, 1200);
+  };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] flex flex-col">
+    <div className="min-h-screen bg-[#0f172a] flex flex-col overflow-hidden text-white">
       <ScreenProgress current={1} />
-      <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-6">
-        <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">Screen 1</p>
-          <h1 className="text-3xl font-bold text-[#1c2434]">Placeholder</h1>
-          <p className="text-[#64748b] mt-2">Content coming soon.</p>
-        </div>
-        <button
-          onClick={() => router.push(`/course/${courseId}/2`)}
-          className="self-start bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold px-8 py-4 rounded-2xl transition-all"
+      
+      <div className="flex-1 flex flex-col items-center justify-center px-6 relative">
+        
+        {/* Ambient background glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#1e293b_0%,#0f172a_100%)] opacity-50" />
+
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="relative z-10 w-full max-w-md"
         >
-          Next →
-        </button>
+          <div className="bg-[#1e293b]/90 backdrop-blur-2xl border border-white/10 p-8 rounded-[3rem] shadow-2xl text-center">
+            
+            {/* The Synthetic Persona Photo */}
+            <div className="relative mx-auto w-32 h-32 mb-6">
+              <motion.div 
+                animate={{ 
+                  boxShadow: ["0 0 0px #3b82f6", "0 0 20px #3b82f6", "0 0 0px #3b82f6"] 
+                }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/10"
+              >
+                <img 
+                  src="/images/fake-person-1.png"
+                  alt="Candidate Avatar" 
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Subtle Glitch Overlay */}
+                <motion.div 
+                  animate={{ opacity: [0, 0.15, 0] }}
+                  transition={{ duration: 0.2, repeat: Infinity, repeatDelay: 3 }}
+                  className="absolute inset-0 bg-blue-500 mix-blend-overlay"
+                />
+              </motion.div>
+              
+              {/* Status Indicator */}
+              <div className="absolute bottom-1 right-2 w-6 h-6 bg-green-500 border-4 border-[#1e293b] rounded-full" />
+            </div>
+
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold">Interview Request</h2>
+              <p className="text-blue-400 font-mono text-xs uppercase tracking-[0.3em] mt-1">ID: Sarah_J_9921</p>
+            </div>
+            
+            <div className="bg-black/30 rounded-2xl p-5 mb-8 text-left border border-white/5">
+              <p className="text-slate-300 text-sm leading-relaxed italic">
+                "Hi, I'm Sarah. I'm here for the Final Round interview for the Project Lead role. Ready when you are!"
+              </p>
+            </div>
+
+            <AnimatePresence mode="wait">
+              {choice === null ? (
+                <motion.div 
+                  exit={{ opacity: 0, y: 10 }}
+                  className="grid grid-cols-2 gap-4"
+                >
+                  <button
+                    onClick={() => handleChoice('deny')}
+                    className="bg-slate-800 hover:bg-slate-700 border border-white/10 text-slate-400 py-5 rounded-2xl font-bold transition-all active:scale-95"
+                  >
+                    Deny
+                  </button>
+                  <button
+                    onClick={() => handleChoice('accept')}
+                    className="bg-blue-600 hover:bg-blue-500 text-white py-5 rounded-2xl font-bold shadow-lg shadow-blue-500/20 transition-all active:scale-95"
+                  >
+                    Accept
+                  </button>
+                </motion.div>
+              ) : (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }} 
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="py-4 font-mono text-blue-400"
+                >
+                  {choice === 'accept' ? "> INITIATING HANDSHAKE..." : "> CALL_REJECTED"}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </motion.div>
+
+        {/* Technical metadata deco */}
+        <div className="absolute bottom-24 left-10 opacity-20 hidden md:block">
+          <p className="text-[10px] font-mono leading-tight">
+            LATENCY: 42ms<br/>
+            ENCRYPTION: AES-256<br/>
+            SOURCE: REMOTE_WIFI
+          </p>
+        </div>
+      </div>
+
+      <div className="p-8 text-center bg-black/20 backdrop-blur-md">
+        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">
+          Time-Sensitive Decision Required
+        </p>
       </div>
     </div>
   );

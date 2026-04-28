@@ -21,6 +21,7 @@ import SPA07 from "@/components/synthetic-persona-attack/screens/SPA07";
 import SPA08 from "@/components/synthetic-persona-attack/screens/SPA08";
 import SPA09 from "@/components/synthetic-persona-attack/screens/SPA09";
 import SPA10 from "@/components/synthetic-persona-attack/screens/SPA10";
+import SPA11 from "@/components/synthetic-persona-attack/screens/SPA11";
 
 type ScreenMap = Record<string, React.ComponentType<{ courseId: string }>>;
 
@@ -48,6 +49,7 @@ const COURSES: Record<string, ScreenMap> = {
     "8": SPA08,
     "9": SPA09,
     "10": SPA10,
+    "11": SPA11,
   },
 };
 
