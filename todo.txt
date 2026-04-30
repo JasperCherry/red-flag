@@ -17,3 +17,12 @@ courses restricted with auth
 
 remove file downloads in courses
 
+
+slow down frames appearing 
+
+
+add more samples images / gifs etc
+
+
+
+
