@@ -1,20 +1,38 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const router = useRouter();
   const [choice, setChoice] = useState<null | 'accept' | 'deny'>(null);
+  const [timeLeft, setTimeLeft] = useState(10);
 
-  const handleChoice = (type: 'accept' | 'deny') => {
+  const handleChoice = useCallback((type: 'accept' | 'deny') => {
     setChoice(type);
     setTimeout(() => {
       router.push(`/course/${courseId}/2`);
     }, 1200);
-  };
+  }, [router, courseId]);
+
+  // Timer logic for redirection
+  useEffect(() => {
+    if (choice !== null) return;
+
+    if (timeLeft <= 0) {
+      const t = setTimeout(() => handleChoice('deny'), 0);
+      return () => clearTimeout(t);
+    }
+
+    const timer = setTimeout(() => {
+      setTimeLeft(prev => prev - 1);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [timeLeft, choice, handleChoice]);
 
   return (
     <div className="min-h-screen bg-[#0f172a] flex flex-col overflow-hidden text-white">
@@ -24,6 +42,16 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
         
         {/* Ambient background glow */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#1e293b_0%,#0f172a_100%)] opacity-50" />
+
+        {/* Timer Bar (Visual Indicator) */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-white/5">
+          <motion.div 
+            initial={{ width: "100%" }}
+            animate={{ width: choice === null ? "0%" : "100%" }}
+            transition={{ duration: choice === null ? 10 : 0.5, ease: "linear" }}
+            className="h-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"
+          />
+        </div>
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
@@ -41,10 +69,11 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/10"
               >
-                <img 
+                <Image
                   src="/images/fake-person-1.png"
-                  alt="Candidate Avatar" 
-                  className="w-full h-full object-cover"
+                  alt="Candidate Avatar"
+                  fill
+                  className="object-cover"
                 />
                 
                 {/* Subtle Glitch Overlay */}
@@ -78,7 +107,7 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
                 >
                   <button
                     onClick={() => handleChoice('deny')}
-                    className="bg-slate-800 hover:bg-slate-700 border border-white/10 text-slate-400 py-5 rounded-2xl font-bold transition-all active:scale-95"
+                    className="group bg-slate-800 hover:bg-red-900/30 border border-white/10 text-slate-400 hover:text-red-400 py-5 rounded-2xl font-bold transition-all active:scale-95"
                   >
                     Deny
                   </button>
@@ -102,13 +131,11 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
           </div>
         </motion.div>
 
-        {/* Technical metadata deco */}
-        <div className="absolute bottom-24 left-10 opacity-20 hidden md:block">
-          <p className="text-[10px] font-mono leading-tight">
-            LATENCY: 42ms<br/>
-            ENCRYPTION: AES-256<br/>
-            SOURCE: REMOTE_WIFI
-          </p>
+        {/* Timer Countdown UI */}
+        <div className="mt-8 text-center">
+           <p className="text-blue-500 font-mono text-xl font-bold">
+             00:{timeLeft < 10 ? `0${timeLeft}` : timeLeft}
+           </p>
         </div>
       </div>
 
