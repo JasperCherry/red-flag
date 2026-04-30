@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 -------// Phase A: The "Blind Entry"
 Total: 1 Screen
 
@@ -13,9 +6,6 @@ Screen 1: The Ambush. A full-screen interactive "event."
 Interaction: User must make a split-second choice (e.g., "Accept/Deny" or "Click link/Ignore").
 
 Exit: Regardless of choice, the screen transitions to Phase B with a "Did you make the right call?" teaser.
-
-
-
 
 
 
@@ -29,8 +19,6 @@ Screen 3: The Red Flags. Visual screen. Highlighting exactly what to look for (3
 Screen 4: The Pro-Tip. A "Hack your own behavior" screen (e.g., The 10-second rule or a specific physical test).
 
 Note: Use Scrolly-telling here to keep it feeling like one continuous flow rather than three "clicks."
-
-
 
 
 
@@ -55,7 +43,6 @@ Action: The consequence plays out based on your choice. If you failed, you get a
 
 
 
-
 -------// Phase D: The "Recap & Reward"
 Total: 2 Screens
 
@@ -69,10 +56,6 @@ Action: Animate the "Shield Badge" appearing. Shows the user's updated "Security
 
 
 
-
-
-
-
 -------// Why 10 Screens?
 
 Production Consistency: You can build 10 standard React components and just swap the data (text/video/images) for all 20 courses.
@@ -80,9 +63,4 @@ Production Consistency: You can build 10 standard React components and just swap
 User Expectations: Employees learn the "pattern." They know by Screen 5, they need to be ready to work, and by Screen 10, they are done.
 
 Data Analytics: It’s easy for HR to see: "Most employees drop off at Screen 7 (The Chat)." This tells you exactly where the course is too hard or confusing.
-
-
-
-
-
 
