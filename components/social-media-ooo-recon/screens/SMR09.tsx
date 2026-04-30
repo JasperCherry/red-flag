@@ -39,7 +39,7 @@ export default function SMR09Analysis({ courseId }: { courseId: string }) {
           <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase D: Recap</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Course Summary</h1>
           <p className="text-[#64748b] mt-4">
-            Alex Morgan's "Austin Trip" could have been a disaster. Here is how we prevent the roadmap from being built:
+            Alex Morgan&apos;s &ldquo;Austin Trip&rdquo; could have been a disaster. Here is how we prevent the roadmap from being built:
           </p>
         </motion.div>
 

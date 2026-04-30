@@ -19,9 +19,9 @@ export default function SMR06LabTechnical({ courseId }: { courseId: string }) {
         
         <div className="mb-8">
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">The Lab: Technical Check</p>
-          <h1 className="text-2xl font-bold text-[#1c2434]">The "Waterford" Trap</h1>
+          <h1 className="text-2xl font-bold text-[#1c2434]">The &ldquo;Waterford&rdquo; Trap</h1>
           <p className="text-[#64748b] mt-2 text-sm leading-relaxed">
-            Moments after Alex's post, this "automated" email arrives. Click the <span className="text-blue-600 font-bold">Sender</span> and the <span className="text-blue-600 font-bold">Button</span> to inspect the technical metadata.
+            Moments after Alex&apos;s post, this &ldquo;automated&rdquo; email arrives. Click the <span className="text-blue-600 font-bold">Sender</span> and the <span className="text-blue-600 font-bold">Button</span> to inspect the technical metadata.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function SMR06LabTechnical({ courseId }: { courseId: string }) {
         </div>
 
         {/* Actionable Feedback */}
-        <div className="mt-8 h-32">
+        <div className="mt-8 min-h-32">
           {allInspected ? (
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
@@ -96,7 +96,7 @@ export default function SMR06LabTechnical({ courseId }: { courseId: string }) {
                 <h4 className="font-bold text-sm uppercase tracking-wider text-red-400">Threat Identified</h4>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                The sender uses <span className="text-white font-mono">.net</span> (fake) instead of the hotel's <span className="text-white font-mono">.com</span>. The login link points to a <span className="text-white font-mono">.xyz</span> domain designed to steal your corporate credentials.
+                The sender uses <span className="text-white font-mono">.net</span> (fake) instead of the hotel&apos;s <span className="text-white font-mono">.com</span>. The login link points to a <span className="text-white font-mono">.xyz</span> domain designed to steal your corporate credentials.
               </p>
               <button 
                 onClick={() => router.push(`/course/${courseId}/7`)}

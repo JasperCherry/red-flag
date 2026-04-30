@@ -40,7 +40,7 @@ export default function SMR03RedFlags({ courseId }: { courseId: string }) {
           <p className="text-xs font-semibold text-red-600 uppercase tracking-widest mb-1">Visual Cues</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Spotting the Echo</h1>
           <p className="text-[#64748b] mt-4">
-            A social engineering attack often feels like an "echo" of your own information. If it sounds familiar, be suspicious.
+            A social engineering attack often feels like an &ldquo;echo&rdquo; of your own information. If it sounds familiar, be suspicious.
           </p>
         </motion.div>
 

@@ -57,7 +57,7 @@ function ResolutionContent({ courseId }: { courseId: string }) {
           </p>
           <h2 className="text-3xl font-black text-[#1c2434] mb-4">{currentResult.title}</h2>
           <p className="text-slate-600 leading-relaxed max-w-sm mx-auto italic">
-            "{currentResult.feedback}"
+            &ldquo;{currentResult.feedback}&rdquo;
           </p>
         </motion.div>
 
@@ -71,7 +71,7 @@ function ResolutionContent({ courseId }: { courseId: string }) {
           <div className="relative z-10">
             <h4 className="text-blue-400 font-bold uppercase text-[10px] tracking-widest mb-2">The Breakdown</h4>
             <p className="text-sm leading-relaxed text-slate-300">
-              In Austin, you were overwhelmed. The attacker knew it because you told them you were at a summit. They used <span className="text-white font-bold">Sarah's name</span> to bypass your logic and used a <span className="text-white font-bold">Personal Device</span> excuse to avoid company security.
+              In Austin, you were overwhelmed. The attacker knew it because you told them you were at a summit. They used <span className="text-white font-bold">Sarah&apos;s name</span> to bypass your logic and used a <span className="text-white font-bold">Personal Device</span> excuse to avoid company security.
             </p>
           </div>
           <div className="absolute -right-4 -bottom-4 text-white/5 text-8xl font-black italic select-none">

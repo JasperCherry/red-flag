@@ -22,7 +22,7 @@ export default function SMR10Final({}: { courseId: string }) {
             Course Complete
           </h1>
           <p className="text-[#64748b] mt-4 text-lg">
-            You've finished the Social Media & OOO Recon module. 
+            You&apos;ve finished the Social Media &amp; OOO Recon module. 
           </p>
         </motion.div>
 
@@ -38,7 +38,7 @@ export default function SMR10Final({}: { courseId: string }) {
             <div>
               <p className="font-bold text-slate-900 text-lg">OOO Hardening</p>
               <p className="text-slate-500 text-sm leading-relaxed">
-                You can now write auto-replies that are helpful to staff without leaking your location, timeline, or colleagues' names to outsiders.
+                You can now write auto-replies that are helpful to staff without leaking your location, timeline, or colleagues&apos; names to outsiders.
               </p>
             </div>
           </motion.div>
@@ -53,7 +53,7 @@ export default function SMR10Final({}: { courseId: string }) {
             <div>
               <p className="font-bold text-slate-900 text-lg">Scraper Awareness</p>
               <p className="text-slate-500 text-sm leading-relaxed">
-                You know how to audit your social media posts for "recon leaks" like badges or hotel stationery that hackers use to impersonate you.
+                You know how to audit your social media posts for &ldquo;recon leaks&rdquo; like badges or hotel stationery that hackers use to impersonate you.
               </p>
             </div>
           </motion.div>
@@ -68,7 +68,7 @@ export default function SMR10Final({}: { courseId: string }) {
             <div>
               <p className="font-bold text-slate-900 text-lg">Out-of-Band Verification</p>
               <p className="text-slate-500 text-sm leading-relaxed">
-                You've practiced identifying and shutting down high-pressure DMs by forcing the conversation onto official, trusted company channels.
+                You&apos;ve practiced identifying and shutting down high-pressure DMs by forcing the conversation onto official, trusted company channels.
               </p>
             </div>
           </motion.div>

@@ -29,7 +29,7 @@ function InsightContent({ courseId }: { courseId: string }) {
             {decision === 'unsafe' ? "You walked into the trap." : "You paused. Good."}
           </h1>
           <p className="text-[#64748b] mt-4 text-lg">
-            That wasn't Sarah. It was a hacker using an <span className="text-slate-900 font-semibold">Information Roadmap</span> you provided.
+            That wasn&apos;t Sarah. It was a hacker using an <span className="text-slate-900 font-semibold">Information Roadmap</span> you provided.
           </p>
         </motion.div>
 
@@ -47,7 +47,7 @@ function InsightContent({ courseId }: { courseId: string }) {
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">1</div>
                 <div>
-                  <p className="text-sm font-bold text-slate-800">The "Tokyo" Leak</p>
+                  <p className="text-sm font-bold text-slate-800">The &ldquo;Tokyo&rdquo; Leak</p>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">By naming your location, you told the attacker you are in a different time zone, likely distracted, and potentially on insecure Wi-Fi.</p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ function InsightContent({ courseId }: { courseId: string }) {
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">2</div>
                 <div>
-                  <p className="text-sm font-bold text-slate-800">The "Friday" Timeline</p>
+                  <p className="text-sm font-bold text-slate-800">The &ldquo;Friday&rdquo; Timeline</p>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">You gave them a deadline. They know exactly how long they have to impersonate you before you return to the office.</p>
                 </div>
               </div>
@@ -63,8 +63,8 @@ function InsightContent({ courseId }: { courseId: string }) {
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">3</div>
                 <div>
-                  <p className="text-sm font-bold text-slate-800">The "Sarah" Target</p>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">Providing a colleague's name gives the attacker a "trusted" identity to impersonate or target next.</p>
+                  <p className="text-sm font-bold text-slate-800">The &ldquo;Sarah&rdquo; Target</p>
+                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">Providing a colleague&apos;s name gives the attacker a &ldquo;trusted&rdquo; identity to impersonate or target next.</p>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">The Lab: Visual Analysis</p>
           <h1 className="text-2xl font-bold text-[#1c2434]">Spot the Recon</h1>
           <p className="text-[#64748b] mt-2 text-sm leading-relaxed">
-            Social media is an attacker's favorite tool. Click on the element in this post that gives away too much <span className="font-bold text-slate-900">context</span>.
+            Social media is an attacker&apos;s favorite tool. Click on the element in this post that gives away too much <span className="font-bold text-slate-900">context</span>.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
               <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="absolute inset-0 bg-[#1c2434]/fb backdrop-blur-md p-8 flex flex-col justify-center text-center text-white z-20"
+                className="absolute inset-0 backdrop-blur-md p-8 flex flex-col justify-center text-center text-white z-20"
                 style={{ backgroundColor: 'rgba(28, 36, 52, 0.96)' }}
               >
                 <motion.div 
@@ -111,7 +111,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
             animate={{ opacity: 1 }}
             className="mt-8 text-center text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold"
           >
-            Hint: What's sitting on the Waterford desk?
+            Hint: What&apos;s sitting on the Waterford desk?
           </motion.p>
         )}
 

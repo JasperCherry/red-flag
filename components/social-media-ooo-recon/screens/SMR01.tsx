@@ -3,12 +3,16 @@
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function SMR01Ambush({ courseId }: { courseId: string }) {
   const router = useRouter();
   const [notified, setNotified] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15);
+
+  const handleChoice = useCallback((decision: string) => {
+    router.push(`/course/${courseId}/2?initialDecision=${decision}`);
+  }, [router, courseId]);
 
   useEffect(() => {
     // Show notification after 1 second
@@ -23,11 +27,7 @@ export default function SMR01Ambush({ courseId }: { courseId: string }) {
     } else if (notified && timeLeft === 0) {
       handleChoice('timeout');
     }
-  }, [notified, timeLeft]);
-
-  const handleChoice = (decision: string) => {
-    router.push(`/course/${courseId}/2?initialDecision=${decision}`);
-  };
+  }, [notified, timeLeft, handleChoice]);
 
   return (
     <div className="min-h-screen bg-[#020617] flex flex-col justify-center items-center overflow-hidden font-sans">
@@ -55,7 +55,7 @@ export default function SMR01Ambush({ courseId }: { courseId: string }) {
                 <motion.div 
                   initial={{ width: "100%" }}
                   animate={{ width: "0%" }}
-                  transition={{ duration: 10, ease: "linear" }}
+                  transition={{ duration: 15, ease: "linear" }}
                   className="h-full bg-red-500"
                 />
               </div>
@@ -77,7 +77,7 @@ export default function SMR01Ambush({ courseId }: { courseId: string }) {
                 </div>
                 
                 <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  "Hey! Since you're in <span className="font-bold text-slate-900">Tokyo</span> until Fri, I'm covering your desk. I can't find the <span className="font-bold text-slate-900">Wire Transfer link</span>. Can you Slack it to me real quick?"
+                  &ldquo;Hey! Since you&apos;re in <span className="font-bold text-slate-900">Tokyo</span> until Fri, I&apos;m covering your desk. I can&apos;t find the <span className="font-bold text-slate-900">Wire Transfer link</span>. Can you Slack it to me real quick?&rdquo;
                 </p>
 
                 <div className="flex flex-col gap-2">

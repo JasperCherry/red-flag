@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
@@ -31,7 +31,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
         
         <div className="mb-6">
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">Phase C: Branching Chat</p>
-          <h1 className="text-xl font-bold text-[#1c2434]">The "Sarah" Escalation</h1>
+          <h1 className="text-xl font-bold text-[#1c2434]">The &ldquo;Sarah&rdquo; Escalation</h1>
         </div>
 
         {/* Mobile Interface Simulation */}
@@ -53,7 +53,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
               animate={{ scale: 1, opacity: 1, x: 0 }}
               className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
             >
-              "Alex! Sorry to bug you in Austin, but I'm having a total meltdown with the Global Summit file. My laptop just died and I need the <span className="font-bold underline">Admin Passcode</span> for the shared drive ASAP."
+              &ldquo;Alex! Sorry to bug you in Austin, but I&apos;m having a total meltdown with the Global Summit file. My laptop just died and I need the <span className="font-bold underline">Admin Passcode</span> for the shared drive ASAP.&rdquo;
             </motion.div>
 
             <motion.div 
@@ -62,7 +62,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
               transition={{ delay: 0.5 }}
               className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
             >
-              "I'm using my personal phone because the office network is acting up too. Please help!! 🙏"
+              &ldquo;I&apos;m using my personal phone because the office network is acting up too. Please help!! 🙏&rdquo;
             </motion.div>
           </div>
 
@@ -88,7 +88,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
         </div>
 
         <p className="mt-6 text-center text-[10px] text-slate-400 italic leading-relaxed">
-          The attacker is counting on your "Helper Instinct" and the stress of being at a summit.
+          The attacker is counting on your &ldquo;Helper Instinct&rdquo; and the stress of being at a summit.
         </p>
 
       </div>

@@ -20,9 +20,9 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
           className="mb-10"
         >
           <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-1">The Pro-Tip</p>
-          <h1 className="text-3xl font-bold text-[#1c2434]">The "Vague-Reply" Rule</h1>
+          <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Vague-Reply&rdquo; Rule</h1>
           <p className="text-[#64748b] mt-4">
-            You can be helpful to your colleagues without giving a hacker a roadmap. The secret is to **remove the specifics.**
+            You can be helpful to your colleagues without giving a hacker a roadmap. The secret is to <strong>remove the specifics.</strong>
           </p>
         </motion.div>
 
@@ -34,8 +34,8 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
             className="p-6 bg-red-50 border border-red-100 rounded-3xl relative"
           >
             <span className="absolute -top-3 left-6 px-3 py-1 bg-red-500 text-white text-[10px] font-bold rounded-full">DANGEROUS</span>
-            <p className="text-red-900/40 text-xs font-mono mb-2 line-through">"I'm in Tokyo until Friday..."</p>
-            <p className="text-red-800 text-sm italic">"I'm out of the office for the rest of the week at a conference in Tokyo. Email Sarah Jenkins if it's urgent."</p>
+            <p className="text-red-900/40 text-xs font-mono mb-2 line-through">&ldquo;I&apos;m in Tokyo until Friday...&rdquo;</p>
+            <p className="text-red-800 text-sm italic">&ldquo;I&apos;m out of the office for the rest of the week at a conference in Tokyo. Email Sarah Jenkins if it&apos;s urgent.&rdquo;</p>
           </motion.div>
 
           <div className="flex justify-center">
@@ -52,7 +52,7 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
           >
             <span className="absolute -top-3 left-6 px-3 py-1 bg-green-600 text-white text-[10px] font-bold rounded-full">SECURE</span>
             <p className="text-green-800 text-sm font-medium">
-              "I am away from my desk with limited access to email until Monday. Please contact the internal support alias for urgent matters."
+              &ldquo;I am away from my desk with limited access to email until Monday. Please contact the internal support alias for urgent matters.&rdquo;
             </p>
           </motion.div>
         </div>
@@ -66,11 +66,11 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
         >
           <div className="bg-white border border-slate-200 p-5 rounded-[2rem]">
             <p className="text-xs font-bold text-slate-400 uppercase mb-2">Internal vs External</p>
-            <p className="text-xs text-slate-600 leading-relaxed">Most email apps let you set different replies for people outside your company. **Keep the specifics internal.**</p>
+            <p className="text-xs text-slate-600 leading-relaxed">Most email apps let you set different replies for people outside your company. <strong>Keep the specifics internal.</strong></p>
           </div>
           <div className="bg-white border border-slate-200 p-5 rounded-[2rem]">
             <p className="text-xs font-bold text-slate-400 uppercase mb-2">Alias Only</p>
-            <p className="text-xs text-slate-600 leading-relaxed">Refer people to a general group (e.g., "The Marketing Team") rather than a specific person's name.</p>
+            <p className="text-xs text-slate-600 leading-relaxed">Refer people to a general group (e.g., &ldquo;The Marketing Team&rdquo;) rather than a specific person&apos;s name.</p>
           </div>
         </motion.div>
 
