@@ -1,11 +1,14 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import ScreenProgress from "@/components/ScreenProgress";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 
-export default function Screen02Insight({ courseId }: { courseId: string }) {
+function InsightContent({ courseId }: { courseId: string }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const choice = searchParams.get("choice");
 
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col">
@@ -21,9 +24,13 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
             Phase B: The Logic
           </p>
-          <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Ghost&rdquo; in the Machine</h1>
+          <h1 className="text-3xl font-bold text-[#1c2434]">
+            {choice === 'accept'
+              ? "You let her in. Here's what she really was."
+              : "Good call. Here's what you almost faced."}
+          </h1>
           <p className="text-[#64748b] mt-3 text-lg leading-relaxed">
-            &ldquo;Sarah&rdquo; is a **Synthetic Persona**. She was built using a blend of stolen data and Generative AI to bypass the standard &ldquo;Stranger Danger&rdquo; instincts of HR managers.
+            &ldquo;Sarah&rdquo; is a <strong>Synthetic Persona</strong>. She was built using a blend of stolen data and Generative AI to bypass the standard &ldquo;Stranger Danger&rdquo; instincts of HR managers.
           </p>
         </motion.div>
 
@@ -40,7 +47,7 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
             </h3>
             <div className="space-y-4">
               <p className="text-slate-600 leading-relaxed">
-                Humans are biologically hardwired to trust **symmetry** and **eye contact**. Deepfake models are specifically trained to replicate these &ldquo;trust triggers,&rdquo; making us ignore technical red flags.
+                Humans are biologically hardwired to trust <strong>symmetry</strong> and <strong>eye contact</strong>. Deepfake models are specifically trained to replicate these &ldquo;trust triggers,&rdquo; making us ignore technical red flags.
               </p>
               <div className="bg-blue-50 rounded-2xl p-5 border border-blue-100">
                 <p className="text-sm text-blue-800 font-medium">
@@ -97,5 +104,13 @@ export default function Screen02Insight({ courseId }: { courseId: string }) {
 
       </div>
     </div>
+  );
+}
+
+export default function Screen02Insight({ courseId }: { courseId: string }) {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#f8fafc]" />}>
+      <InsightContent courseId={courseId} />
+    </Suspense>
   );
 }

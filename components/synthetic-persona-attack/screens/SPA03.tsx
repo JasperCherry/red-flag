@@ -79,7 +79,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
           <div className="flex gap-3">
             <span className="text-amber-600 font-bold">⚠️</span>
             <p className="text-xs text-amber-800 leading-relaxed">
-              **Pro Tip:** If you suspect a deepfake during a live call, ask the candidate to **turn their head slowly to the side.** Most real-time AI models fail to render a perfect profile view.
+              <strong>Pro Tip:</strong> If you suspect a deepfake during a live call, ask the candidate to <strong>turn their head slowly to the side.</strong> Most real-time AI models fail to render a perfect profile view.
             </p>
           </div>
         </motion.div>

@@ -42,7 +42,7 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Authority Trap</h1>
           <p className="text-[#64748b] mt-2">
-            You receive a direct message from <span className="font-bold text-[#1c2434]">Mark (VP of Sales)</span> while you&apos;re in the middle of a busy afternoon.
+            Two hours after the security alert, you think the threat is over. Then a direct message arrives from <span className="font-bold text-[#1c2434]">Mark (VP of Sales)</span>.
           </p>
         </div>
 

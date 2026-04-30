@@ -14,7 +14,7 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const handleChoice = useCallback((type: 'accept' | 'deny') => {
     setChoice(type);
     setTimeout(() => {
-      router.push(`/course/${courseId}/2`);
+      router.push(`/course/${courseId}/2?choice=${type}`);
     }, 1200);
   }, [router, courseId]);
 

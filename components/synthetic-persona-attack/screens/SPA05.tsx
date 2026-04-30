@@ -39,7 +39,7 @@ export default function Screen05LabVisualFix({ courseId }: { courseId: string })
           <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Phase C: Visual Lab</p>
           <h2 className="text-2xl font-bold">Uncanny Valley</h2>
           <p className="text-slate-400 text-sm mt-2 leading-relaxed">
-            AI-generated faces often &ldquo;fail&rdquo; at the edges. One detail on this subject&apos;s right side (your left) is a major red flag. **Find and tap the generative artifact.**
+            AI-generated faces often &ldquo;fail&rdquo; at the edges. One detail on this subject&apos;s right side (your left) is a major red flag. <strong>Find and tap the generative artifact.</strong>
           </p>
         </div>
 

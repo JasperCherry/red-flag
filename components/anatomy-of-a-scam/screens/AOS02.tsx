@@ -9,8 +9,6 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
   const searchParams = useSearchParams();
   const result = searchParams.get("result");
 
-  const isVictim = result === "click";
-
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col">
       <ScreenProgress current={2} />
@@ -27,8 +25,10 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
             The Reality Check
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434] leading-tight">
-            {isVictim 
-              ? "You reacted exactly how they planned." 
+            {result === 'click'
+              ? "You reacted exactly how they planned."
+              : result === 'timeout'
+              ? "You froze. That instinct was exactly right."
               : "You hesitated. But was it luck or logic?"}
           </h1>
           <p className="text-lg text-[#64748b]">

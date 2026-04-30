@@ -49,9 +49,9 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
 
             <div className="grid gap-4 mt-2">
               {[
-                { step: "01", text: "Hands off the device." },
-                { step: "02", text: "Take one deep breath." },
-                { step: "03", text: "Ask: 'Why is this urgent?'" }
+                { step: "01", text: "Stop. Don’t touch anything yet." },
+                { step: "02", text: "Look away from the screen for three seconds." },
+                { step: "03", text: "Ask yourself: who benefits if I act right now?" }
               ].map((item, index) => (
                 <motion.div 
                   initial={{ x: -10, opacity: 0 }}

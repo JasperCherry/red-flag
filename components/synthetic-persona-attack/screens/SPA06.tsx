@@ -56,7 +56,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
           <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase C: Verification</p>
           <h2 className="text-2xl font-bold text-[#1c2434]">The Digital Paperwork</h2>
           <p className="text-slate-600 text-sm mt-2">
-            Synthetic personas have &ldquo;shallow&rdquo; digital histories. Inspect Sarah&apos;s profile details. Which one is the **dead giveaway?**
+            Synthetic personas have &ldquo;shallow&rdquo; digital histories. Inspect Sarah&apos;s profile details. Which one is the <strong>dead giveaway?</strong>
           </p>
         </div>
 

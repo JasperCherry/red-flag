@@ -19,7 +19,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">The Lab: Visual Analysis</p>
           <h1 className="text-2xl font-bold text-[#1c2434]">Spot the Recon</h1>
           <p className="text-[#64748b] mt-2 text-sm leading-relaxed">
-            Social media is an attacker&apos;s favorite tool. Click on the element in this post that gives away too much <span className="font-bold text-slate-900">context</span>.
+            Here&apos;s a real example. Alex Morgan, a project manager, posted this before a conference trip. Click on the element that handed an attacker everything they needed.
           </p>
         </div>
 

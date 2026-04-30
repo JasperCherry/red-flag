@@ -19,7 +19,7 @@ export default function Screen11Final({}: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
-          <h1 className="text-4xl font-bold text-[#1c2434]">Training Complete</h1>
+          <h1 className="text-4xl font-bold text-[#1c2434]">Identity Defender</h1>
           <p className="text-[#64748b] mt-4 text-lg leading-relaxed max-w-md mx-auto">
             You have completed the <span className="text-slate-900 font-semibold underline decoration-blue-500">Synthetic Persona Attack</span> module.
           </p>
@@ -48,7 +48,7 @@ export default function Screen11Final({}: { courseId: string }) {
               
               <div className="space-y-2">
                 <p className="text-white font-mono text-xs uppercase tracking-[0.3em]">Status</p>
-                <p className="text-green-400 font-bold text-xl uppercase tracking-wider">Threat Decoded</p>
+                <p className="text-green-400 font-bold text-xl uppercase tracking-wider">Identity Defender</p>
               </div>
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export default function Screen11Final({}: { courseId: string }) {
           className="bg-white border border-slate-200 p-6 rounded-3xl mb-10 shadow-sm"
         >
           <p className="text-slate-600 text-sm leading-relaxed">
-            From visual artifacts in remote interviews to social engineering in internal chats—you now know the signs of a **Deepfake Candidate**. 
+            From visual artifacts in remote interviews to social engineering in internal chats&mdash;you now know the signs of a <strong>Deepfake Candidate</strong>.
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export default function Screen11Final({}: { courseId: string }) {
             onClick={() => router.push("/")}
             className="w-full bg-[#1c2434] hover:bg-black text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 text-lg"
           >
-            Exit Course
+            Return to Dashboard
           </button>
         </motion.div>
 
