@@ -57,17 +57,16 @@ export default function Screen09PostGame({ courseId }: { courseId: string }) {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4 }}
-          className="bg-[#1c2434] rounded-3xl p-6 text-white shadow-xl flex items-center justify-between gap-4"
+          className="bg-[#1c2434] rounded-3xl p-7 text-white shadow-xl"
         >
-          <div className="space-y-1">
-            <h2 className="font-bold text-sm">PDF Cheat Sheet</h2>
-            <p className="text-slate-400 text-[11px]">Save these red flags to your device.</p>
-          </div>
-          <button disabled className="bg-white/10 text-white/40 border border-white/20 font-bold px-4 py-2.5 rounded-xl text-xs cursor-not-allowed">Download</button>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Remember this</p>
+          <p className="text-xl font-black leading-snug">
+            If it&apos;s urgent and it wants something, it&apos;s a performance.
+          </p>
         </motion.div>
 
         <motion.button

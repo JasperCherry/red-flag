@@ -77,7 +77,7 @@ export default function SMR01Ambush({ courseId }: { courseId: string }) {
                 </div>
                 
                 <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  &ldquo;Hey! Since you&apos;re in <span className="font-bold text-slate-900">Tokyo</span> until Fri, I&apos;m covering your desk. I can&apos;t find the <span className="font-bold text-slate-900">Wire Transfer link</span>. Can you Slack it to me real quick?&rdquo;
+                  &ldquo;Hey! Since you&apos;re in Tokyo until Friday, I&apos;m covering your desk. I can&apos;t find the Wire Transfer link. Can you Slack it to me real quick?&rdquo;
                 </p>
 
                 <div className="flex flex-col gap-2">

@@ -107,7 +107,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
         <div className="pt-2">
           <button
             onClick={() => router.push(`/course/${courseId}/4`)}
-            className="group bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold px-8 py-4 rounded-2xl transition-all shadow-lg flex items-center gap-3 active:scale-95"
+            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3"
           >
             Next: Master the Defense
             <span className="group-hover:translate-x-1 transition-transform">→</span>

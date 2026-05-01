@@ -9,7 +9,7 @@ import { useState, useEffect, useCallback } from "react";
 export default function Screen01Ambush({ courseId }: { courseId: string }) {
   const router = useRouter();
   const [choice, setChoice] = useState<null | 'accept' | 'deny'>(null);
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(15);
 
   const handleChoice = useCallback((type: 'accept' | 'deny') => {
     setChoice(type);
@@ -48,7 +48,7 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
           <motion.div 
             initial={{ width: "100%" }}
             animate={{ width: choice === null ? "0%" : "100%" }}
-            transition={{ duration: choice === null ? 10 : 0.5, ease: "linear" }}
+            transition={{ duration: choice === null ? 15 : 0.5, ease: "linear" }}
             className="h-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"
           />
         </div>
@@ -91,6 +91,11 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
             <div className="mb-6">
               <h2 className="text-2xl font-bold">Interview Request</h2>
               <p className="text-blue-400 font-mono text-xs uppercase tracking-[0.3em] mt-1">ID: Sarah_J_9921</p>
+              {choice === null && (
+                <p className="text-red-400 font-mono text-sm font-bold mt-2">
+                  Auto-rejection in {timeLeft < 10 ? `0${timeLeft}` : timeLeft}s
+                </p>
+              )}
             </div>
             
             <div className="bg-black/30 rounded-2xl p-5 mb-8 text-left border border-white/5">
@@ -124,19 +129,13 @@ export default function Screen01Ambush({ courseId }: { courseId: string }) {
                   animate={{ opacity: 1, scale: 1 }}
                   className="py-4 font-mono text-blue-400"
                 >
-                  {choice === 'accept' ? "> INITIATING HANDSHAKE..." : "> CALL_REJECTED"}
+                  {choice === 'accept' ? <span>&#62; INITIATING HANDSHAKE...</span> : <span className="text-red-400">&#62; CALL_REJECTED</span>}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
         </motion.div>
 
-        {/* Timer Countdown UI */}
-        <div className="mt-8 text-center">
-           <p className="text-blue-500 font-mono text-xl font-bold">
-             00:{timeLeft < 10 ? `0${timeLeft}` : timeLeft}
-           </p>
-        </div>
       </div>
 
       <div className="p-8 text-center bg-black/20 backdrop-blur-md">

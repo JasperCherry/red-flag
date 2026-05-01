@@ -38,12 +38,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
 
   const handleVerify = (id: string, isFake: boolean) => {
     setSelected(id);
-    if (isFake) {
-      setIsCorrect(true);
-      setTimeout(() => {
-        router.push(`/course/${courseId}/7`);
-      }, 2500);
-    }
+    if (isFake) setIsCorrect(true);
   };
 
   return (
@@ -99,23 +94,32 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
           </div>
         </div>
 
-        <div className="h-20"> {/* Fixed height to prevent layout shift */}
-          <AnimatePresence mode="wait">
-            {selected && (
-              <motion.div
-                key={selected}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className={`p-4 rounded-2xl text-center text-sm font-medium ${
-                  isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                }`}
-              >
-                {options.find(o => o.id === selected)?.feedback}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+        <AnimatePresence mode="wait">
+          {selected && (
+            <motion.div
+              key={selected}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className={`p-4 rounded-2xl text-center text-sm font-medium mb-4 ${
+                isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+              }`}
+            >
+              {options.find(o => o.id === selected)?.feedback}
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {isCorrect && (
+          <motion.button
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            onClick={() => router.push(`/course/${courseId}/7`)}
+            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95"
+          >
+            Continue
+          </motion.button>
+        )}
 
       </div>
     </div>

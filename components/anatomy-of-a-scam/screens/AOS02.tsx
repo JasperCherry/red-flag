@@ -77,7 +77,7 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
 
           <button
             onClick={() => router.push(`/course/${courseId}/3`)}
-            className="group flex items-center gap-3 bg-[#1c2434] hover:bg-[#2d3a4f] text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg"
+            className="w-full bg-[#1c2434] hover:bg-[#2d3a4f] text-white font-bold py-5 rounded-2xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3"
           >
             How do they set the trap?
             <span className="group-hover:translate-x-1 transition-transform">→</span>

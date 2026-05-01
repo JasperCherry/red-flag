@@ -39,7 +39,21 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              viewport={{ once: true }}
+              className="rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm"
+            >
+              <img
+                src="/images/profile-turn.gif"
+                alt="AI deepfake glitching on profile turn"
+                className="w-full object-cover"
+              />
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -77,7 +91,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
         >
           <button
             onClick={() => router.push(`/course/${courseId}/5`)}
-            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-6 rounded-[2rem] transition-all shadow-xl active:scale-95 flex items-center justify-center gap-3"
+            className="w-full bg-[#145bb3] hover:bg-[#1c78e9] text-white font-bold py-5 rounded-2xl transition-all shadow-xl active:scale-95 flex items-center justify-center gap-3"
           >
             Enter the Simulation
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
