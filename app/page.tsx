@@ -1,10 +1,14 @@
 import Link from "next/link";
+import LinkedInShareButton from "@/components/LinkedInShareButton";
 
 export default function SelectionPage() {
   return (
     <div className="min-h-screen bg-[#f1f5f9] flex flex-col">
       <main className="flex-1 max-w-3xl mx-auto w-full px-6 py-16">
-        <h1 className="text-4xl font-black text-[#1c2434] mb-8">Courses</h1>
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-4xl font-black text-[#1c2434]">Courses</h1>
+          <LinkedInShareButton />
+        </div>
 
         <div className="flex flex-col gap-5">
           <Link href="/course/anatomy-of-a-scam/1" className="group block">
