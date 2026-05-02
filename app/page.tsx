@@ -1,13 +1,39 @@
 import Link from "next/link";
-import LinkedInShareButton from "@/components/LinkedInShareButton";
+import Image from "next/image";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export default function SelectionPage() {
+  const linkedInShareUrl = () => {
+    const url = "https://redflag-f02a6ca94c5d.herokuapp.com/";
+    const text = encodeURIComponent("Hey, I just learned new things about protecting myself from scams online. Check it out!");
+    return `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&text=${text}`;
+  };
+
   return (
     <div className="min-h-screen bg-[#f1f5f9] flex flex-col">
       <main className="flex-1 max-w-3xl mx-auto w-full px-6 py-16">
+        <div className="flex justify-center mb-10">
+          <Image
+            src="/logo.webp"
+            alt="Forteye"
+            width={180}
+            height={48}
+            priority
+          />
+        </div>
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-4xl font-black text-[#1c2434]">Courses</h1>
-          <LinkedInShareButton />
+          <a
+            href={linkedInShareUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0A66C2] hover:bg-[#004182] text-white text-sm font-bold transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            Share on LinkedIn
+          </a>
         </div>
 
         <div className="flex flex-col gap-5">
@@ -113,6 +139,8 @@ export default function SelectionPage() {
             </div>
           </Link>
         </div>
+
+        <WaitlistForm />
       </main>
     </div>
   );

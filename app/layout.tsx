@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RedFlag — Security Awareness Training",
+  title: "Forteye — Security Awareness Training",
   description: "Practical, interactive cybersecurity training. No tech background needed.",
 };
 
