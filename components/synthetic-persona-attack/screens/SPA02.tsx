@@ -21,7 +21,7 @@ function InsightContent({ courseId }: { courseId: string }) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">
             Phase B: The Logic
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">
@@ -29,7 +29,7 @@ function InsightContent({ courseId }: { courseId: string }) {
               ? "You let her in. Here's what she really was."
               : "Good call. Here's what you almost faced."}
           </h1>
-          <p className="text-[#64748b] mt-3 text-lg leading-relaxed">
+          <p className="text-[#334155] mt-3 text-lg leading-relaxed">
             &ldquo;Sarah&rdquo; is a <strong>Synthetic Persona</strong>. She was built using a blend of stolen data and Generative AI to bypass the standard &ldquo;Stranger Danger&rdquo; instincts of HR managers.
           </p>
         </motion.div>
@@ -46,11 +46,11 @@ function InsightContent({ courseId }: { courseId: string }) {
               <span className="text-2xl">🧠</span> Why it Works
             </h3>
             <div className="space-y-4">
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-[#334155] leading-relaxed">
                 Humans are biologically hardwired to trust <strong>symmetry</strong> and <strong>eye contact</strong>. Deepfake models are specifically trained to replicate these &ldquo;trust triggers,&rdquo; making us ignore technical red flags.
               </p>
               <div className="bg-blue-50 rounded-2xl p-5 border border-blue-100">
-                <p className="text-sm text-blue-800 font-medium">
+                <p className="text-base text-blue-800 font-medium">
                   The Goal: To get &ldquo;hired,&rdquo; gain VPN access, and move laterally through the company network as an authorized employee.
                 </p>
               </div>
@@ -67,8 +67,8 @@ function InsightContent({ courseId }: { courseId: string }) {
             className="bg-[#1c2434] p-6 rounded-3xl text-white"
           >
             <p className="text-blue-400 font-bold text-3xl mb-1">90%</p>
-            <p className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">Detection Gap</p>
-            <p className="text-[10px] text-slate-500 mt-2 leading-tight">Traditional background checks often miss AI-generated IDs.</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-300">Detection Gap</p>
+            <p className="text-sm text-slate-300 mt-2 leading-snug">Traditional background checks often miss AI-generated IDs.</p>
           </motion.div>
           
           <motion.div 
@@ -78,8 +78,8 @@ function InsightContent({ courseId }: { courseId: string }) {
             className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm"
           >
             <p className="text-red-500 font-bold text-3xl mb-1">$$$</p>
-            <p className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">Potential Loss</p>
-            <p className="text-[10px] text-slate-500 mt-2 leading-tight">One &ldquo;insider&rdquo; can export terabytes of proprietary data.</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-[#475569]">Potential Loss</p>
+            <p className="text-sm text-[#334155] mt-2 leading-snug">One &ldquo;insider&rdquo; can export terabytes of proprietary data.</p>
           </motion.div>
         </div>
 

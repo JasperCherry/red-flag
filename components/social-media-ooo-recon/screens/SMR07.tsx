@@ -30,8 +30,8 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-md mx-auto w-full px-6 pt-10 pb-24 flex flex-col">
         
         <div className="mb-6">
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">Phase C: Branching Chat</p>
-          <h1 className="text-xl font-bold text-[#1c2434]">The &ldquo;Sarah&rdquo; Escalation</h1>
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Phase C: Branching Chat</p>
+          <h1 className="text-2xl font-bold text-[#1c2434]">The &ldquo;Sarah&rdquo; Escalation</h1>
         </div>
 
         {/* Mobile Interface Simulation */}
@@ -42,7 +42,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
             <div className="w-10 h-10 rounded-full bg-slate-400 flex-shrink-0 border border-white/20" />
             <div>
               <p className="text-sm font-bold">Sarah Jenkins</p>
-              <p className="text-[10px] opacity-80">online</p>
+              <p className="text-xs opacity-90">online</p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
             <motion.div 
               initial={{ scale: 0.8, opacity: 0, x: -20 }}
               animate={{ scale: 1, opacity: 1, x: 0 }}
-              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
+              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-sm text-slate-800 leading-relaxed"
             >
               &ldquo;Alex! Sorry to bug you in Austin, but I&apos;m having a total meltdown with the Global Summit file. My laptop just died and I need the <span className="font-bold underline">Admin Passcode</span> for the shared drive ASAP.&rdquo;
             </motion.div>
@@ -60,7 +60,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
               initial={{ scale: 0.8, opacity: 0, x: -20 }}
               animate={{ scale: 1, opacity: 1, x: 0 }}
               transition={{ delay: 0.5 }}
-              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-xs text-slate-800 leading-relaxed"
+              className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-sm text-slate-800 leading-relaxed"
             >
               &ldquo;I&apos;m using my personal phone because the office network is acting up too. Please help!! 🙏&rdquo;
             </motion.div>
@@ -68,14 +68,14 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
 
           {/* User Input Options */}
           <div className="p-4 bg-white/90 backdrop-blur-md border-t border-slate-200 space-y-2">
-            <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 text-center">Select your response:</p>
+            <p className="text-xs text-[#475569] font-bold uppercase mb-2 text-center">Select your response:</p>
             
             {options.map((opt) => (
               <button
                 key={opt.id}
                 onClick={() => handleChoice(opt.id)}
                 disabled={selectedOption !== null}
-                className={`w-full text-left p-3 rounded-xl text-xs font-medium transition-all border
+                className={`w-full text-left p-3 rounded-xl text-sm font-medium transition-all border
                   ${selectedOption === opt.id 
                     ? 'bg-blue-600 text-white border-blue-600 scale-[0.98]' 
                     : 'bg-white text-slate-700 border-slate-200 hover:border-blue-400 active:bg-slate-50'}
@@ -87,7 +87,7 @@ export default function SMR07ChatSetup({ courseId }: { courseId: string }) {
           </div>
         </div>
 
-        <p className="mt-6 text-center text-[10px] text-slate-400 italic leading-relaxed">
+        <p className="mt-6 text-center text-sm text-[#475569] italic leading-relaxed">
           The attacker is counting on your &ldquo;Helper Instinct&rdquo; and the stress of being at a summit.
         </p>
 

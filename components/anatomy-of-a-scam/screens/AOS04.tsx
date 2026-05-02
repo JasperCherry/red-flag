@@ -14,11 +14,11 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-10">
         {/* Header */}
         <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest mb-1">
             Phase B: The Final Lesson
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Hack Your Brain</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             The scammer&apos;s greatest enemy isn&apos;t IT software. It&apos;s 10 seconds of your time.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             className="flex gap-4 p-2"
           >
             <div className="flex-shrink-0 w-1 bg-[#145bb3] rounded-full" />
-            <p className="text-[#64748b] leading-relaxed">
+            <p className="text-[#334155] leading-relaxed">
               Biologically, it takes roughly <span className="text-[#1c2434] font-bold">10 seconds</span> for your logical brain to override a fear response. By doing nothing, you are actively winning the fight.
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             className="bg-amber-50 border border-amber-100 rounded-2xl p-5 flex gap-4"
           >
             <span className="text-2xl">💡</span>
-            <p className="text-sm text-amber-900 leading-snug">
+            <p className="text-base text-amber-900 leading-snug">
               <strong>Pro Tip:</strong> If the message claims to be from your boss, use those 10 seconds to check their actual email address—not just the display name.
             </p>
           </motion.div>

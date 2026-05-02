@@ -36,11 +36,11 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">
             Phase B: Detection
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Spotting the Artifacts</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             AI is a master of the face, but a failure at the details. Watch for these three &ldquo;glitches.&rdquo;
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
               </div>
               <div>
                 <h3 className="font-bold text-[#1c2434] mb-1">{flag.title}</h3>
-                <p className="text-sm text-[#64748b] leading-relaxed">
+                <p className="text-base text-[#334155] leading-relaxed">
                   {flag.desc}
                 </p>
               </div>
@@ -78,7 +78,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
         >
           <div className="flex gap-3">
             <span className="text-amber-600 font-bold">⚠️</span>
-            <p className="text-xs text-amber-800 leading-relaxed">
+            <p className="text-sm text-amber-800 leading-relaxed">
               <strong>Pro Tip:</strong> If you suspect a deepfake during a live call, ask the candidate to <strong>turn their head slowly to the side.</strong> Most real-time AI models fail to render a perfect profile view.
             </p>
           </div>

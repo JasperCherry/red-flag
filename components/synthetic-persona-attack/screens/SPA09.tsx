@@ -37,11 +37,11 @@ export default function Screen09Recap({ courseId }: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }}
           className="mb-10"
         >
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">
             Phase D: Summary
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Your Defense Kit</h1>
-          <p className="text-[#64748b] mt-3">
+          <p className="text-base text-[#334155] mt-3">
             You are the last line of defense against synthetic threats. Remember these three rules to keep the company safe.
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ export default function Screen09Recap({ courseId }: { courseId: string }) {
               </div>
               <div>
                 <h3 className="font-bold text-[#1c2434] mb-1">{rule.title}</h3>
-                <p className="text-sm text-[#64748b] leading-relaxed">
+                <p className="text-base text-[#334155] leading-relaxed">
                   {rule.desc}
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function Screen09Recap({ courseId }: { courseId: string }) {
           transition={{ delay: 0.6 }}
           className="bg-slate-900 rounded-[2.5rem] p-8 text-center text-white mb-10 relative overflow-hidden"
         >
-          <p className="text-blue-400 font-mono text-[10px] uppercase tracking-widest mb-2">Final Thought</p>
+          <p className="text-blue-400 font-mono text-xs uppercase tracking-widest mb-2">Final Thought</p>
           <p className="text-lg font-medium leading-relaxed">
             &ldquo;Identity is the new perimeter. If you can&apos;t verify the human, you can&apos;t trust the access.&rdquo;
           </p>

@@ -37,9 +37,9 @@ export default function SMR03RedFlags({ courseId }: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }} 
           className="mb-12"
         >
-          <p className="text-xs font-semibold text-red-600 uppercase tracking-widest mb-1">Visual Cues</p>
+          <p className="text-sm font-bold text-red-600 uppercase tracking-widest mb-1">Visual Cues</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Spotting the Echo</h1>
-          <p className="text-[#64748b] mt-4">
+          <p className="text-base text-[#334155] mt-4">
             A social engineering attack often feels like an &ldquo;echo&rdquo; of your own information. If it sounds familiar, be suspicious.
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ export default function SMR03RedFlags({ courseId }: { courseId: string }) {
               </div>
               <div>
                 <h3 className="font-bold text-[#1c2434] mb-1">{flag.label}</h3>
-                <p className="text-sm text-[#64748b] leading-relaxed">
+                <p className="text-base text-[#334155] leading-relaxed">
                   {flag.text}
                 </p>
               </div>
@@ -74,7 +74,7 @@ export default function SMR03RedFlags({ courseId }: { courseId: string }) {
           whileInView={{ opacity: 1 }}
           className="mt-12 p-6 bg-slate-900 rounded-[2rem] text-center"
         >
-          <p className="text-blue-400 font-mono text-[10px] uppercase tracking-widest mb-2">Coming Up Next</p>
+          <p className="text-blue-400 font-mono text-xs uppercase tracking-widest mb-2">Coming Up Next</p>
           <p className="text-white font-medium">How to fix your OOO reply so this never happens again.</p>
         </motion.div>
 

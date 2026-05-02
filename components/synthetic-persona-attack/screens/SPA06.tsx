@@ -48,9 +48,9 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-10 pb-20 flex flex-col">
         
         <div className="mb-8">
-          <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase C: Verification</p>
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Phase C: Verification</p>
           <h2 className="text-2xl font-bold text-[#1c2434]">The Digital Paperwork</h2>
-          <p className="text-slate-600 text-sm mt-2">
+          <p className="text-base text-[#334155] mt-2">
             Synthetic personas have &ldquo;shallow&rdquo; digital histories. Inspect Sarah&apos;s profile details. Which one is the <strong>dead giveaway?</strong>
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
              </div>
              <div>
                 <h3 className="font-bold text-[#1c2434]">Sarah Jenkins</h3>
-                <p className="text-[10px] text-slate-500 font-mono uppercase tracking-tight">Verified Candidate ID: 4492-X</p>
+                <p className="text-xs text-[#475569] font-mono uppercase tracking-tight">Verified Candidate ID: 4492-X</p>
              </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
                     : 'border-slate-100 bg-slate-50 hover:border-blue-200'
                 }`}
               >
-                <span className={`text-sm font-medium ${selected === opt.id && !opt.isFake ? 'text-red-700' : 'text-slate-700'}`}>
+                <span className={`text-base font-medium ${selected === opt.id && !opt.isFake ? 'text-red-700' : 'text-slate-700'}`}>
                   {opt.label}
                 </span>
                 {selected === opt.id && (
@@ -101,7 +101,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className={`p-4 rounded-2xl text-center text-sm font-medium mb-4 ${
+              className={`p-4 rounded-2xl text-center text-base font-medium mb-4 ${
                 isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
               }`}
             >

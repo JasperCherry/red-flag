@@ -20,7 +20,7 @@ export default function Screen10Shield({}: { courseId: string }) {
           className="mb-12"
         >
           <h1 className="text-4xl font-bold text-[#1c2434]">Course Complete</h1>
-          <p className="text-[#64748b] mt-3 text-lg">
+          <p className="text-[#334155] mt-3 text-lg">
             You&apos;ve successfully decoded the Anatomy of a Scam.
           </p>
         </motion.div>

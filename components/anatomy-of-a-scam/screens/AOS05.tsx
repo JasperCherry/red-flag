@@ -42,11 +42,11 @@ export default function Screen05LabVisual({ courseId }: { courseId: string }) {
 
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-6">
         <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest">
             Phase C: Active Simulation
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Visual Lab</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             The attacker has hidden <strong>one fatal flaw</strong> in this interface. Tap the element that proves this is a scam.
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function Screen05LabVisual({ courseId }: { courseId: string }) {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m0 0v2m0-2h2m-2 0H10m11 3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase">System Flag</p>
+                <p className="text-xs font-bold text-[#475569] uppercase">System Flag</p>
                 <p className="text-xs font-mono text-slate-600">Incident ID: #882 - IP: 10.0.0.1</p>
               </div>
             </button>
@@ -94,7 +94,7 @@ export default function Screen05LabVisual({ courseId }: { courseId: string }) {
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 </div>
                 <div className="text-left">
-                  <p className="text-[10px] font-bold text-slate-400 uppercase">Security Provider</p>
+                  <p className="text-xs font-bold text-[#475569] uppercase">Security Provider</p>
                   <p className="font-mono text-sm text-slate-700">v.security-protocol.net</p>
                 </div>
               </button>
@@ -114,7 +114,7 @@ export default function Screen05LabVisual({ courseId }: { courseId: string }) {
                 className={`p-5 rounded-2xl flex gap-4 ${status === 'success' ? 'bg-green-50 border border-green-200 text-green-800' : 'bg-red-50 border border-red-100 text-red-800'}`}
               >
                 <span className="text-xl">{status === 'success' ? '✅' : '❌'}</span>
-                <p className="text-sm leading-relaxed">{feedback}</p>
+                <p className="text-base leading-relaxed">{feedback}</p>
               </motion.div>
             )}
           </AnimatePresence>

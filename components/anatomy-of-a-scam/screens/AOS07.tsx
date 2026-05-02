@@ -37,11 +37,11 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
 
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-8">
         <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest mb-1">
             Phase C: The Branching Chat
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Authority Trap</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             Two hours after the security alert, you think the threat is over. Then a direct message arrives from <span className="font-bold text-[#1c2434]">Mark (VP of Sales)</span>.
           </p>
         </div>
@@ -90,14 +90,14 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
 
           {/* Input Area (Choices) */}
           <div className="p-4 bg-white border-t border-slate-100">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3 px-2">Choose your response:</p>
+            <p className="text-xs font-bold text-[#475569] uppercase tracking-widest mb-3 px-2">Choose your response:</p>
             <div className="flex flex-col gap-2">
               {choices.map((choice) => (
                 <button
                   key={choice.id}
                   onClick={() => handleSelection(choice.id)}
                   disabled={selectedChoice !== null}
-                  className={`text-left p-4 rounded-xl text-sm font-medium transition-all border-2 
+                  className={`text-left p-4 rounded-xl text-base font-medium transition-all border-2
                     ${selectedChoice === choice.id 
                       ? 'border-[#145bb3] bg-blue-50 text-[#145bb3]' 
                       : 'border-slate-100 bg-slate-50 text-slate-600 hover:border-slate-300 hover:bg-slate-100'
@@ -110,7 +110,7 @@ export default function Screen07ChatPart1({ courseId }: { courseId: string }) {
           </div>
         </div>
 
-        <p className="text-center text-xs text-slate-400 italic">
+        <p className="text-center text-sm text-[#475569] italic">
           Remember the 10-Second Circuit Breaker? Think before you tap.
         </p>
       </div>

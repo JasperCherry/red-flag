@@ -36,9 +36,9 @@ export default function SMR09Analysis({ courseId }: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }}
           className="mb-10"
         >
-          <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Phase D: Recap</p>
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Phase D: Recap</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">Course Summary</h1>
-          <p className="text-[#64748b] mt-4">
+          <p className="text-base text-[#334155] mt-4">
             Alex Morgan&apos;s &ldquo;Austin Trip&rdquo; could have been a disaster. Here is how we prevent the roadmap from being built:
           </p>
         </motion.div>
@@ -55,8 +55,8 @@ export default function SMR09Analysis({ courseId }: { courseId: string }) {
             >
               <div className="text-3xl">{item.icon}</div>
               <div>
-                <h4 className="font-bold text-[#1c2434] text-sm">{item.title}</h4>
-                <p className="text-xs text-[#64748b] leading-relaxed mt-1">{item.desc}</p>
+                <h4 className="font-bold text-[#1c2434] text-base">{item.title}</h4>
+                <p className="text-sm text-[#334155] leading-relaxed mt-1">{item.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -69,18 +69,18 @@ export default function SMR09Analysis({ courseId }: { courseId: string }) {
           transition={{ delay: 0.4 }}
           className="mb-10 space-y-3"
         >
-          <p className="text-xs font-bold text-[#8a99af] uppercase tracking-widest mb-4">OOO Reply: Before &amp; After</p>
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest mb-4">OOO Reply: Before &amp; After</p>
 
           <div className="bg-red-50 border border-red-100 rounded-[1.5rem] p-5">
-            <p className="text-[10px] font-bold text-red-500 uppercase tracking-widest mb-2">Dangerous</p>
-            <p className="text-xs text-red-900 leading-relaxed italic">
+            <p className="text-xs font-bold text-red-600 uppercase tracking-widest mb-2">Dangerous</p>
+            <p className="text-sm text-red-900 leading-relaxed italic">
               &ldquo;I&apos;m out of office attending the Global Innovation Summit at the Waterford Hotel in Austin, TX until Friday. My colleague Sarah Jenkins is covering — reach her at s.jenkins@company.com.&rdquo;
             </p>
           </div>
 
           <div className="bg-green-50 border border-green-100 rounded-[1.5rem] p-5">
-            <p className="text-[10px] font-bold text-green-600 uppercase tracking-widest mb-2">Safe</p>
-            <p className="text-xs text-green-900 leading-relaxed italic">
+            <p className="text-xs font-bold text-green-700 uppercase tracking-widest mb-2">Safe</p>
+            <p className="text-sm text-green-900 leading-relaxed italic">
               &ldquo;I&apos;m currently out of office and will respond when I return. For urgent matters, please contact your usual internal team channel.&rdquo;
             </p>
           </div>

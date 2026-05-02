@@ -16,9 +16,9 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-10 pb-24 flex flex-col">
         
         <div className="mb-8">
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">The Lab: Visual Analysis</p>
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">The Lab: Visual Analysis</p>
           <h1 className="text-2xl font-bold text-[#1c2434]">Spot the Recon</h1>
-          <p className="text-[#64748b] mt-2 text-sm leading-relaxed">
+          <p className="text-base text-[#334155] mt-2 leading-relaxed">
             Here&apos;s a real example. Alex Morgan, a project manager, posted this before a conference trip. Click on the element that handed an attacker everything they needed.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
             </div>
             <div>
               <p className="text-xs font-bold text-slate-900">alex_morgan_tech</p>
-              <p className="text-[10px] text-slate-400 font-medium">1 hour ago • Austin, TX</p>
+              <p className="text-xs text-[#475569] font-medium">1 hour ago • Austin, TX</p>
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
                <span className="text-slate-400 text-lg">💬</span>
                <span className="text-slate-400 text-lg">🚀</span>
             </div>
-            <p className="text-xs text-slate-800 leading-relaxed">
+            <p className="text-sm text-slate-800 leading-relaxed">
               <span className="font-bold">alex_morgan_tech</span> Finally made it! Day 1 of the Global Innovation Summit. Austin is hot but the venue is incredible. 🤠 #GlobalInnovation #Austin #WaterfordHotel
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function SMR05LabVisual({ courseId }: { courseId: string }) {
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="mt-8 text-center text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold"
+            className="mt-8 text-center text-sm text-[#475569] uppercase tracking-wider font-bold"
           >
             Hint: What&apos;s sitting on the Waterford desk?
           </motion.p>

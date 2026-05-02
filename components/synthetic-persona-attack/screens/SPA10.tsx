@@ -95,7 +95,7 @@ export default function Screen10FinalQuiz({ courseId }: { courseId: string }) {
         {!showResults ? (
           <>
             <div className="mb-8">
-              <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">
+              <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">
                 Assessment: Question {currentStep + 1} of {QUESTIONS.length}
               </p>
               <h1 className="text-2xl font-bold text-[#1c2434]">
@@ -145,10 +145,10 @@ export default function Screen10FinalQuiz({ courseId }: { courseId: string }) {
                   animate={{ opacity: 1, y: 0 }}
                   className={`p-5 rounded-2xl mb-6 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}
                 >
-                  <p className={`text-sm font-bold mb-1 ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-base font-bold mb-1 ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
                     {isCorrect ? '✓ Correct' : '✗ Not quite'}
                   </p>
-                  <p className={`text-sm leading-relaxed ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
+                  <p className={`text-base leading-relaxed ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
                     {currentQuestion.explanations[selectedAnswer]}
                   </p>
                 </motion.div>
@@ -184,7 +184,7 @@ export default function Screen10FinalQuiz({ courseId }: { courseId: string }) {
             </motion.div>
 
             <h2 className="text-3xl font-bold text-slate-900 mb-2">Final Score</h2>
-            <p className="text-slate-500 mb-10 text-lg">
+            <p className="text-[#334155] mb-10 text-lg">
               You correctly identified <span className="font-bold text-[#1c2434]">{score} / {QUESTIONS.length}</span> threats.
             </p>
 

@@ -22,11 +22,11 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
 
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-8">
         <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest">
             Phase C: Technical Lab
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Inspector</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             Attackers hide behind &ldquo;Display Names.&rdquo; Use the inspector tool to reveal the true sender before you take action.
           </p>
         </div>
@@ -41,15 +41,15 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
                   JD
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#1c2434] text-sm">Jane Doe (HR Director)</h3>
-                  <p className="text-[11px] text-[#8a99af]">To: You • 2 mins ago</p>
+                  <h3 className="font-bold text-[#1c2434] text-base">Jane Doe (HR Director)</h3>
+                  <p className="text-xs text-[#475569]">To: You • 2 mins ago</p>
                 </div>
               </div>
               
               {!isInspected && (
                 <button 
                   onClick={handleInspect}
-                  className="bg-blue-50 text-blue-600 text-[10px] font-bold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors uppercase tracking-tight"
+                  className="bg-blue-50 text-blue-600 text-xs font-bold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors uppercase tracking-tight"
                 >
                   🔍 Inspect Sender
                 </button>
@@ -86,7 +86,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
           {/* Email Body */}
           <div className="p-8 space-y-4">
             <h2 className="text-lg font-bold text-[#1c2434]">Urgent: Payroll Adjustment</h2>
-            <p className="text-sm text-[#64748b] leading-relaxed">
+            <p className="text-base text-[#334155] leading-relaxed">
               Hello, <br /><br />
               We noticed a discrepancy in your bank details for this month&apos;s payroll. To ensure your salary is processed correctly, please verify your account info via the attached PDF.
             </p>
@@ -101,7 +101,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
 
         {/* Action Center */}
         <div className="space-y-4">
-          <p className="text-center text-xs font-bold text-[#8a99af] uppercase tracking-widest">Your Final Decision:</p>
+          <p className="text-center text-sm font-bold text-[#475569] uppercase tracking-widest">Your Final Decision:</p>
           <div className="grid grid-cols-2 gap-4">
             <button
               onClick={() => handleFinalDecision("trust")}
@@ -132,7 +132,7 @@ export default function Screen06LabTechnical({ courseId }: { courseId: string })
                   <h4 className={`font-bold ${decision === 'report' ? 'text-green-800' : 'text-red-800'}`}>
                     {decision === 'report' ? "Perfect Execution!" : "You fell for the Pretext."}
                   </h4>
-                  <p className={`text-sm mt-1 leading-relaxed ${decision === 'report' ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-base mt-1 leading-relaxed ${decision === 'report' ? 'text-green-700' : 'text-red-700'}`}>
                     {decision === 'report' 
                       ? "You spotted the double extension (.pdf.exe) and the fake domain. Jane Doe would never use a @hr-portal-secure.net address." 
                       : "The .exe at the end of the filename means this is a program, not a document. Clicking this would have compromised your machine."}

@@ -19,9 +19,9 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }} 
           className="mb-10"
         >
-          <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-1">The Pro-Tip</p>
+          <p className="text-sm font-bold text-green-600 uppercase tracking-widest mb-1">The Pro-Tip</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Vague-Reply&rdquo; Rule</h1>
-          <p className="text-[#64748b] mt-4">
+          <p className="text-base text-[#334155] mt-4">
             You can be helpful to your colleagues without giving a hacker a roadmap. The secret is to <strong>remove the specifics.</strong>
           </p>
         </motion.div>
@@ -33,9 +33,9 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
             animate={{ opacity: 1, x: 0 }}
             className="p-6 bg-red-50 border border-red-100 rounded-3xl relative"
           >
-            <span className="absolute -top-3 left-6 px-3 py-1 bg-red-500 text-white text-[10px] font-bold rounded-full">DANGEROUS</span>
-            <p className="text-red-900/40 text-xs font-mono mb-2 line-through">&ldquo;I&apos;m in Tokyo until Friday...&rdquo;</p>
-            <p className="text-red-800 text-sm italic">&ldquo;I&apos;m out of the office for the rest of the week at a conference in Tokyo. Email Sarah Jenkins if it&apos;s urgent.&rdquo;</p>
+            <span className="absolute -top-3 left-6 px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full">DANGEROUS</span>
+            <p className="text-red-800 text-xs font-mono mb-2 line-through opacity-60">&ldquo;I&apos;m in Tokyo until Friday...&rdquo;</p>
+            <p className="text-red-900 text-base italic">&ldquo;I&apos;m out of the office for the rest of the week at a conference in Tokyo. Email Sarah Jenkins if it&apos;s urgent.&rdquo;</p>
           </motion.div>
 
           <div className="flex justify-center">
@@ -50,8 +50,8 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
             transition={{ delay: 0.2 }}
             className="p-6 bg-green-50 border border-green-100 rounded-3xl relative"
           >
-            <span className="absolute -top-3 left-6 px-3 py-1 bg-green-600 text-white text-[10px] font-bold rounded-full">SECURE</span>
-            <p className="text-green-800 text-sm font-medium">
+            <span className="absolute -top-3 left-6 px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">SECURE</span>
+            <p className="text-green-900 text-base font-medium">
               &ldquo;I am away from my desk with limited access to email until Monday. Please contact the internal support alias for urgent matters.&rdquo;
             </p>
           </motion.div>
@@ -65,12 +65,12 @@ export default function SMR04ProTip({ courseId }: { courseId: string }) {
           className="grid grid-cols-2 gap-4"
         >
           <div className="bg-white border border-slate-200 p-5 rounded-[2rem]">
-            <p className="text-xs font-bold text-slate-400 uppercase mb-2">Internal vs External</p>
-            <p className="text-xs text-slate-600 leading-relaxed">Most email apps let you set different replies for people outside your company. <strong>Keep the specifics internal.</strong></p>
+            <p className="text-xs font-bold text-[#475569] uppercase mb-2">Internal vs External</p>
+            <p className="text-sm text-[#334155] leading-relaxed">Most email apps let you set different replies for people outside your company. <strong>Keep the specifics internal.</strong></p>
           </div>
           <div className="bg-white border border-slate-200 p-5 rounded-[2rem]">
-            <p className="text-xs font-bold text-slate-400 uppercase mb-2">Alias Only</p>
-            <p className="text-xs text-slate-600 leading-relaxed">Refer people to a general group (e.g., &ldquo;The Marketing Team&rdquo;) rather than a specific person&apos;s name.</p>
+            <p className="text-xs font-bold text-[#475569] uppercase mb-2">Alias Only</p>
+            <p className="text-sm text-[#334155] leading-relaxed">Refer people to a general group (e.g., &ldquo;The Marketing Team&rdquo;) rather than a specific person&apos;s name.</p>
           </div>
         </motion.div>
 

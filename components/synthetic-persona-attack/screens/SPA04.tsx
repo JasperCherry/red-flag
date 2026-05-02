@@ -19,7 +19,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+            <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">
               Phase B: The Shield
             </p>
             <h1 className="text-3xl font-bold text-[#1c2434]">The &ldquo;Profile&rdquo; Test</h1>
@@ -34,7 +34,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               className="bg-white border-l-4 border-blue-600 p-6 rounded-r-[2rem] shadow-sm"
             >
               <h3 className="font-bold text-[#1c2434] mb-2">Force a 90° Turn</h3>
-              <p className="text-sm text-[#64748b] leading-relaxed">
+              <p className="text-base text-[#334155] leading-relaxed">
                 Most consumer-grade AI models are trained on frontal photos. When a person turns their head completely to the side, the AI struggles to map the nose and ears, causing the &ldquo;mask&rdquo; to flicker or disappear.
               </p>
             </motion.div>
@@ -61,7 +61,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               className="bg-slate-900 text-white p-8 rounded-[2.5rem] relative overflow-hidden"
             >
               <div className="relative z-10">
-                <p className="text-blue-400 font-mono text-[10px] uppercase tracking-widest mb-4">Tactical Command</p>
+                <p className="text-blue-400 font-mono text-xs uppercase tracking-widest mb-4">Tactical Command</p>
                 <p className="text-xl font-medium leading-snug">
                   &ldquo;Hey, Sarah—could you just tilt your head to the left for a second? I want to check the lighting on your side.&rdquo;
                 </p>
@@ -75,7 +75,7 @@ export default function Screen04ProTip({ courseId }: { courseId: string }) {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-center text-xs text-slate-400 font-medium px-4"
+              className="text-center text-sm text-[#475569] font-medium px-4"
             >
               If they refuse or the video &ldquo;glitches&rdquo; out, terminate the call immediately.
             </motion.p>

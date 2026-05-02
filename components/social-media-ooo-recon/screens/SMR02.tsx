@@ -22,13 +22,13 @@ function InsightContent({ courseId }: { courseId: string }) {
           animate={{ opacity: 1, y: 0 }} 
           className="mb-10 text-center"
         >
-          <div className="inline-block px-4 py-1 rounded-full bg-slate-200 text-slate-700 text-[10px] font-bold uppercase tracking-widest mb-4">
+          <div className="inline-block px-4 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-widest mb-4">
             Analysis
           </div>
           <h1 className="text-3xl font-bold text-[#1c2434]">
             {decision === 'unsafe' ? "You walked into the trap." : "You paused. Good."}
           </h1>
-          <p className="text-[#64748b] mt-4 text-lg">
+          <p className="text-[#334155] mt-4 text-lg">
             That wasn&apos;t Sarah. It was a hacker using an <span className="text-slate-900 font-semibold">Information Roadmap</span> you provided.
           </p>
         </motion.div>
@@ -41,14 +41,14 @@ function InsightContent({ courseId }: { courseId: string }) {
             transition={{ delay: 0.2 }}
             className="bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm"
           >
-            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-tight mb-6">How they built the attack:</h3>
+            <h3 className="text-sm font-bold text-[#475569] uppercase tracking-tight mb-6">How they built the attack:</h3>
             
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">1</div>
                 <div>
                   <p className="text-sm font-bold text-slate-800">The &ldquo;Tokyo&rdquo; Leak</p>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">By naming your location, you told the attacker you are in a different time zone, likely distracted, and potentially on insecure Wi-Fi.</p>
+                  <p className="text-sm text-[#334155] mt-1 leading-relaxed">By naming your location, you told the attacker you are in a different time zone, likely distracted, and potentially on insecure Wi-Fi.</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ function InsightContent({ courseId }: { courseId: string }) {
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">2</div>
                 <div>
                   <p className="text-sm font-bold text-slate-800">The &ldquo;Friday&rdquo; Timeline</p>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">You gave them a deadline. They know exactly how long they have to impersonate you before you return to the office.</p>
+                  <p className="text-sm text-[#334155] mt-1 leading-relaxed">You gave them a deadline. They know exactly how long they have to impersonate you before you return to the office.</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ function InsightContent({ courseId }: { courseId: string }) {
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 font-bold text-xs border border-blue-100">3</div>
                 <div>
                   <p className="text-sm font-bold text-slate-800">The &ldquo;Sarah&rdquo; Target</p>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">Providing a colleague&apos;s name gives the attacker a &ldquo;trusted&rdquo; identity to impersonate or target next.</p>
+                  <p className="text-sm text-[#334155] mt-1 leading-relaxed">Providing a colleague&apos;s name gives the attacker a &ldquo;trusted&rdquo; identity to impersonate or target next.</p>
                 </div>
               </div>
             </div>

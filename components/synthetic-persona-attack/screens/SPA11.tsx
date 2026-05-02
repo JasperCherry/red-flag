@@ -20,7 +20,7 @@ export default function Screen11Final({}: { courseId: string }) {
           className="mb-12"
         >
           <h1 className="text-4xl font-bold text-[#1c2434]">Identity Defender</h1>
-          <p className="text-[#64748b] mt-4 text-lg leading-relaxed max-w-md mx-auto">
+          <p className="text-[#334155] mt-4 text-lg leading-relaxed max-w-md mx-auto">
             You have completed the <span className="text-slate-900 font-semibold underline decoration-blue-500">Synthetic Persona Attack</span> module.
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ export default function Screen11Final({}: { courseId: string }) {
           transition={{ delay: 0.5 }}
           className="bg-white border border-slate-200 p-6 rounded-3xl mb-10 shadow-sm"
         >
-          <p className="text-slate-600 text-sm leading-relaxed">
+          <p className="text-base text-[#334155] leading-relaxed">
             From visual artifacts in remote interviews to social engineering in internal chats&mdash;you now know the signs of a <strong>Deepfake Candidate</strong>.
           </p>
         </motion.div>

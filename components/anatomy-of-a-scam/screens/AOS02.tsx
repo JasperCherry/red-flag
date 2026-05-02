@@ -21,7 +21,7 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
           viewport={{ once: true }}
           className="space-y-4"
         >
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest">
             The Reality Check
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434] leading-tight">
@@ -31,7 +31,7 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
               ? "You froze. That instinct was exactly right."
               : "You hesitated. But was it luck or logic?"}
           </h1>
-          <p className="text-lg text-[#64748b]">
+          <p className="text-lg text-[#334155]">
             The alert you just saw wasn&apos;t a technical error. It was a <strong>Pretext</strong>—the first act of a digital performance.
           </p>
         </motion.div>
@@ -50,10 +50,10 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
             </svg>
           </div>
           <h2 className="text-xl font-bold text-[#1c2434]">The &ldquo;Helpful IT Guy&rdquo; Role</h2>
-          <p className="text-[#64748b] leading-relaxed">
+          <p className="text-[#334155] leading-relaxed">
             Scammers don&apos;t just send links; they cast themselves in a role. In the previous screen, the &ldquo;actor&rdquo; played the <strong>System Administrator</strong>.
           </p>
-          <p className="text-[#64748b] leading-relaxed">
+          <p className="text-[#334155] leading-relaxed">
             They used a red border and a ticking clock to trigger your <strong>Urgency</strong>. When humans are rushed, we stop looking at the <em>sender</em> and start focusing on the <em>threat</em>.
           </p>
         </motion.div>
@@ -71,7 +71,7 @@ export default function Screen02CoreInsight({ courseId }: { courseId: string }) 
               &ldquo;A scam is not a hack of your computer. It is a hack of your emotions.&rdquo;
             </p>
           </div>
-          <p className="text-[#64748b]">
+          <p className="text-[#334155]">
             By pretending to &ldquo;help&rdquo; you secure your account, the attacker makes you feel like you are on the same team. This is the <strong>Anatomy of a Scam</strong>: creating a fake reality where the safest thing to do is exactly what the attacker wants.
           </p>
 

@@ -24,9 +24,9 @@ export default function Screen05LabVisualFix({ courseId }: { courseId: string })
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-10 pb-20 flex flex-col justify-between">
 
         <div className="mb-6">
-          <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Phase C: Visual Lab</p>
+          <p className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-1">Phase C: Visual Lab</p>
           <h2 className="text-2xl font-bold">Uncanny Valley</h2>
-          <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+          <p className="text-slate-300 text-base mt-2 leading-relaxed">
             AI-generated faces often &ldquo;fail&rdquo; at the edges. One detail on this subject&apos;s right side (your left) is a major red flag. <strong>Find and tap the generative artifact.</strong>
           </p>
         </div>

@@ -25,8 +25,8 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-2xl mx-auto w-full px-4 pt-10 pb-20 flex flex-col">
         
         <div className="px-2 mb-6">
-          <p className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">Internal Comms</p>
-          <h2 className="text-xl font-bold text-slate-900">Urgent Request</h2>
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-[0.2em] mb-1">Internal Comms</p>
+          <h2 className="text-2xl font-bold text-slate-900">Urgent Request</h2>
         </div>
 
         <div className="flex-1 bg-white rounded-[2rem] shadow-xl border border-slate-200 overflow-hidden flex flex-col">
@@ -38,8 +38,8 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
                 <img src="/images/fake-person-1.png" alt="Sarah" className="object-cover h-full w-full" />
               </div>
               <div>
-                <p className="text-sm font-bold text-slate-900">Sarah Jenkins</p>
-                <p className="text-[10px] text-slate-400 italic">New Hire • Marketing</p>
+                <p className="text-base font-bold text-slate-900">Sarah Jenkins</p>
+                <p className="text-xs text-[#475569] italic">New Hire • Marketing</p>
               </div>
             </div>
             <div className="flex gap-2 opacity-30">
@@ -84,18 +84,18 @@ export default function Screen07ChatSetup({ courseId }: { courseId: string }) {
             >
               <button 
                 onClick={() => handleChoice('unsafe')}
-                className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-sm text-left transition-all"
+                className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-base text-left transition-all"
               >
                 <p className="font-bold text-slate-800">&ldquo;Sure, send it over and I&apos;ll handle it.&rdquo;</p>
-                <p className="text-[11px] text-slate-500 mt-1">Help the new hire meet the payroll deadline immediately.</p>
+                <p className="text-sm text-[#475569] mt-1">Help the new hire meet the payroll deadline immediately.</p>
               </button>
 
               <button 
                 onClick={() => handleChoice('secure')}
-                className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-sm text-left transition-all"
+                className="group w-full border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50 p-4 rounded-2xl text-base text-left transition-all"
               >
                 <p className="font-bold text-slate-800">&ldquo;I can&apos;t take that info over chat. Contact HR.&rdquo;</p>
-                <p className="text-[11px] text-slate-500 mt-1">Require the use of official encrypted company portals.</p>
+                <p className="text-sm text-[#475569] mt-1">Require the use of official encrypted company portals.</p>
               </button>
             </motion.div>
           )}

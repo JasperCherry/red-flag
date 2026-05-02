@@ -48,10 +48,10 @@ export default function Screen08ChatPart2({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-8">
         <div className="flex justify-between items-end">
           <div className="space-y-1">
-            <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest">The Outcome</p>
+            <p className="text-sm font-bold text-[#475569] uppercase tracking-widest">The Outcome</p>
             <h1 className="text-3xl font-bold text-[#1c2434]">{outcome.title}</h1>
           </div>
-          <div className={`text-[10px] font-black px-3 py-1 rounded-full border-2 ${outcome.border} ${outcome.color}`}>
+          <div className={`text-xs font-black px-3 py-1 rounded-full border-2 ${outcome.border} ${outcome.color}`}>
             {outcome.status}
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Screen08ChatPart2({ courseId }: { courseId: string }) {
           <p className="text-[#1c2434] leading-relaxed font-medium">
             {outcome.lesson}
           </p>
-          <p className="text-sm text-slate-600">
+          <p className="text-base text-[#334155]">
             Real executives will never ask you to bypass security protocols. If it feels like a &ldquo;performance,&rdquo; it&apos;s because it is.
           </p>
         </motion.div>
@@ -103,7 +103,7 @@ export default function Screen08ChatPart2({ courseId }: { courseId: string }) {
           {choice !== "3" && (
             <button 
               onClick={() => router.push(`/course/${courseId}/7`)}
-              className="w-full py-4 text-sm font-bold text-[#145bb3] hover:bg-blue-50 rounded-2xl transition-colors"
+              className="w-full py-4 text-base font-bold text-[#145bb3] hover:bg-blue-50 rounded-2xl transition-colors"
             >
               ← Try the conversation again
             </button>

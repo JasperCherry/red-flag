@@ -52,11 +52,11 @@ function ResolutionContent({ courseId }: { courseId: string }) {
           className={`p-8 rounded-[3rem] shadow-xl text-center mb-10 ${currentResult.isSuccess ? 'bg-white border-2 border-green-500' : 'bg-white border-2 border-red-100'}`}
         >
           <div className="text-6xl mb-6">{currentResult.emoji}</div>
-          <p className={`text-xs font-bold uppercase tracking-[0.2em] mb-2 ${currentResult.isSuccess ? 'text-green-600' : 'text-red-500'}`}>
+          <p className={`text-sm font-bold uppercase tracking-[0.2em] mb-2 ${currentResult.isSuccess ? 'text-green-600' : 'text-red-500'}`}>
             {currentResult.status}
           </p>
           <h2 className="text-3xl font-black text-[#1c2434] mb-4">{currentResult.title}</h2>
-          <p className="text-slate-600 leading-relaxed max-w-sm mx-auto italic">
+          <p className="text-[#334155] leading-relaxed max-w-sm mx-auto italic">
             &ldquo;{currentResult.feedback}&rdquo;
           </p>
         </motion.div>
@@ -69,8 +69,8 @@ function ResolutionContent({ courseId }: { courseId: string }) {
           className="bg-[#1c2434] p-8 rounded-[2.5rem] text-white relative overflow-hidden"
         >
           <div className="relative z-10">
-            <h4 className="text-blue-400 font-bold uppercase text-[10px] tracking-widest mb-2">The Breakdown</h4>
-            <p className="text-sm leading-relaxed text-slate-300">
+            <h4 className="text-blue-400 font-bold uppercase text-xs tracking-widest mb-2">The Breakdown</h4>
+            <p className="text-base leading-relaxed text-slate-300">
               In Austin, you were overwhelmed. The attacker knew it because you told them you were at a summit. They used <span className="text-white font-bold">Sarah&apos;s name</span> to bypass your logic and used a <span className="text-white font-bold">Personal Device</span> excuse to avoid company security.
             </p>
           </div>

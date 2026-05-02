@@ -41,9 +41,9 @@ export default function SMR10Final({}: { courseId: string }) {
           <div className="w-24 h-24 bg-[#1c2434] rounded-[2rem] flex items-center justify-center mb-5 shadow-xl">
             <span className="text-4xl">🔒</span>
           </div>
-          <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Module 02 Complete</p>
+          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Module 02 Complete</p>
           <h1 className="text-3xl font-black text-[#1c2434]">Recon Defender</h1>
-          <p className="text-[#64748b] mt-2 text-sm max-w-xs">
+          <p className="text-base text-[#334155] mt-2 max-w-xs">
             You finished the Social Media &amp; OOO Recon module. Here&apos;s what you can now do that you couldn&apos;t before.
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ export default function SMR10Final({}: { courseId: string }) {
               <div className="text-2xl flex-shrink-0 mt-0.5">{skill.icon}</div>
               <div>
                 <p className="font-bold text-slate-900 mb-1">{skill.title}</p>
-                <p className="text-slate-500 text-sm leading-relaxed">{skill.body}</p>
+                <p className="text-base text-[#334155] leading-relaxed">{skill.body}</p>
               </div>
             </motion.div>
           ))}

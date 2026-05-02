@@ -34,9 +34,9 @@ export default function Screen09PostGame({ courseId }: { courseId: string }) {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">Phase D: Wrap Up</p>
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest mb-1">Phase D: Wrap Up</p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Final Blueprint</h1>
-          <p className="text-[#64748b] mt-2">Everything you need to remember for next time.</p>
+          <p className="text-base text-[#334155] mt-2">Everything you need to remember for next time.</p>
         </motion.div>
 
         <div className="flex flex-col gap-3">
@@ -50,8 +50,8 @@ export default function Screen09PostGame({ courseId }: { courseId: string }) {
             >
               <div className="text-2xl bg-slate-50 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">{lesson.icon}</div>
               <div>
-                <h3 className="font-bold text-[#1c2434] text-sm">{lesson.title}</h3>
-                <p className="text-xs text-[#64748b] leading-relaxed">{lesson.desc}</p>
+                <h3 className="font-bold text-[#1c2434] text-base">{lesson.title}</h3>
+                <p className="text-sm text-[#334155] leading-relaxed">{lesson.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -63,7 +63,7 @@ export default function Screen09PostGame({ courseId }: { courseId: string }) {
           transition={{ delay: 0.4 }}
           className="bg-[#1c2434] rounded-3xl p-7 text-white shadow-xl"
         >
-          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Remember this</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-300 mb-4">Remember this</p>
           <p className="text-xl font-black leading-snug">
             If it&apos;s urgent and it wants something, it&apos;s a performance.
           </p>

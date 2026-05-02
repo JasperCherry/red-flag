@@ -14,11 +14,11 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
       <div className="flex-1 max-w-2xl mx-auto w-full px-6 pt-14 pb-24 flex flex-col gap-8">
         {/* Header */}
         <div>
-          <p className="text-xs font-semibold text-[#8a99af] uppercase tracking-widest mb-1">
+          <p className="text-sm font-bold text-[#475569] uppercase tracking-widest mb-1">
             Phase B: The &ldquo;Bite-Sized Teach&rdquo;
           </p>
           <h1 className="text-3xl font-bold text-[#1c2434]">The Anatomy of a Trap</h1>
-          <p className="text-[#64748b] mt-2">
+          <p className="text-base text-[#334155] mt-2">
             Even the most &ldquo;perfect&rdquo; scripts have flaws. Here is what you missed in the heat of the moment.
           </p>
         </div>
@@ -96,7 +96,7 @@ export default function Screen03RedFlags({ courseId }: { courseId: string }) {
             </div>
             <div>
               <h3 className="text-[#145bb3] font-bold text-lg mb-1">The Golden Rule</h3>
-              <p className="text-sm text-blue-800 leading-relaxed">
+              <p className="text-base text-blue-800 leading-relaxed">
                 If a digital interaction demands <strong>Immediate Action</strong> to avoid a <strong>Negative Outcome</strong>, treat it as a script until proven otherwise.
               </p>
             </div>

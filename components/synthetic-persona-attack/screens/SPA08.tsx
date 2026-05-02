@@ -32,7 +32,7 @@ function ResolutionContent({ courseId }: { courseId: string }) {
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Threat Neutralized</h2>
             <div className="bg-white border border-slate-200 p-6 rounded-[2rem] shadow-sm text-left mb-8">
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-base text-[#334155] leading-relaxed">
                 By directing &ldquo;Sarah&rdquo; to official channels, you broke the attacker&apos;s plan. Never give data to someone you can&apos;t verify in person or through official systems.
                 <br /><br />
                 Security logs later revealed &ldquo;Sarah Jenkins&rdquo; never actually joined the company&mdash;it was a synthetic persona designed to harvest bank details from helpful employees.
@@ -53,16 +53,16 @@ function ResolutionContent({ courseId }: { courseId: string }) {
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Security Breach</h2>
             <div className="bg-red-50 border border-red-100 p-6 rounded-[2rem] text-left mb-8">
-              <p className="text-red-800 text-sm leading-relaxed font-medium">
+              <p className="text-red-800 text-base leading-relaxed font-medium">
                 You just sent sensitive data over an unencrypted chat to an unverified identity.
               </p>
-              <p className="text-red-700/70 text-xs mt-3 leading-relaxed">
+              <p className="text-red-700 text-sm mt-3 leading-relaxed">
                 &ldquo;Sarah&rdquo; used your &ldquo;helpful&rdquo; manual update to divert direct deposits to an offshore account. This is how 70% of synthetic identity theft succeeds—through kindness, not code.
               </p>
             </div>
             <button 
               onClick={() => router.push(`/course/${courseId}/7`)}
-              className="text-red-600 font-bold text-sm hover:underline mb-4 block"
+              className="text-red-600 font-bold text-base hover:underline mb-4 block"
             >
               ← Try the interaction again
             </button>
