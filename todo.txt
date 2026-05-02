@@ -16,6 +16,8 @@ courses restricted with auth
 
 deploy to heroku on dev branch
 
+improve contrast and visibility
+bigger font, more user eyesight friendly colors
 
 
 
