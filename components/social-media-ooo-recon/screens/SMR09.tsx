@@ -62,23 +62,28 @@ export default function SMR09Analysis({ courseId }: { courseId: string }) {
           ))}
         </div>
 
-        {/* PDF Download Action */}
+        {/* Before / After */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="bg-blue-50 border border-blue-100 p-6 rounded-[2rem] flex items-center justify-between mb-10"
+          className="mb-10 space-y-3"
         >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-xl shadow-sm">📄</div>
-            <div>
-              <p className="text-xs font-bold text-blue-900">The OOO Cheat Sheet</p>
-              <p className="text-[10px] text-blue-700">Safe templates for your next trip.</p>
-            </div>
+          <p className="text-xs font-bold text-[#8a99af] uppercase tracking-widest mb-4">OOO Reply: Before &amp; After</p>
+
+          <div className="bg-red-50 border border-red-100 rounded-[1.5rem] p-5">
+            <p className="text-[10px] font-bold text-red-500 uppercase tracking-widest mb-2">Dangerous</p>
+            <p className="text-xs text-red-900 leading-relaxed italic">
+              &ldquo;I&apos;m out of office attending the Global Innovation Summit at the Waterford Hotel in Austin, TX until Friday. My colleague Sarah Jenkins is covering — reach her at s.jenkins@company.com.&rdquo;
+            </p>
           </div>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold py-2 px-4 rounded-lg transition-all active:scale-95">
-            Download PDF
-          </button>
+
+          <div className="bg-green-50 border border-green-100 rounded-[1.5rem] p-5">
+            <p className="text-[10px] font-bold text-green-600 uppercase tracking-widest mb-2">Safe</p>
+            <p className="text-xs text-green-900 leading-relaxed italic">
+              &ldquo;I&apos;m currently out of office and will respond when I return. For urgent matters, please contact your usual internal team channel.&rdquo;
+            </p>
+          </div>
         </motion.div>
 
         {/* Final Navigation */}
